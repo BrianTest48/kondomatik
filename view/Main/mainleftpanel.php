@@ -4,7 +4,7 @@
 
 		<div class="sidebar-header">
 			<div class="sidebar-title">
-				Navigation
+				Navegacion
 			</div>
 			<div class="sidebar-toggle d-none d-md-block" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
 				<i class="fas fa-bars" aria-label="Toggle sidebar"></i>
@@ -327,31 +327,7 @@
 								</li>
 							</ul>
 						</li>
-						<li>
-							<a class="nav-link" href="">
-								<i class="bx bx-home-alt" aria-hidden="true"></i>
-								<span>PANEL ADMINISTRATIVO</span>
-							</a>
-						</li>
-						<li class="nav-parent">
-							<a class="nav-link" href="">
-								<i class="bx bx-cart-alt" aria-hidden="true"></i>
-								<span>Gestion de Propietario</span>
-							</a>
-							<ul class="nav nav-children">
-								<li>
-									<a class="nav-link" href="">
-										Enviar Dpto Usuario - Contraseña
-									</a>
-								</li>
-								<li>
-									<a class="nav-link" href="">
-										Registrar Propietario - Familiar - Inquilino
-									</a>
-								</li>
-
-							</ul>
-						</li>
+						
 					</ul>
 					
 				</nav>

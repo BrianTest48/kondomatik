@@ -19,7 +19,7 @@
 
         public static function ruta(){
             //Local
-            return "http://localhost/perfitec/";
+            return "http://localhost/kondomatik/";
             //Produccion
             //return "http://www.tudominio.com/";
         }

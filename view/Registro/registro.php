@@ -4,7 +4,7 @@
 <head>
 
     <?php require_once("../Main/mainhead.php") ?>
-    <title>Perfitec - Registro</title>
+    <title>Kondomatic - Registro</title>
 
 </head>
 

@@ -3,7 +3,7 @@
 
 <head>
     <?php require_once("../Main/mainhead.php") ?>
-    <title>Perfitec - Login</title>
+    <title>Kondomatik - Login</title>
 
 </head>
 
@@ -11,9 +11,12 @@
     <!-- start: page -->
     <section class="body-sign">
         <div class="center-sign">
-            <a href="" class="logo float-left">
+            <!-- <a href="" class="logo float-left">
                 <img src="../../public/img/logo.png" height="70" alt="Porto Admin" />
-            </a>
+            </a> -->
+
+          
+            <p class="m-b-10">Sistema de Administracion de Condominios</p>
 
             <div class="panel card-sign">
                 <div class="card-title-sign mt-3 text-end">

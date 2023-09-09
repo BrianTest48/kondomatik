@@ -5,7 +5,7 @@
 
 <head>
     <?php require_once("../Main/mainhead.php"); ?>
-    <title>Perfitec - Inicio</title>
+    <title>Kondomatik - Inicio</title>
 </head>
 
 <body>
