@@ -9,7 +9,7 @@
  <script src="../../public/lib/magnific-popup/jquery.magnific-popup.js"></script>
  <script src="../../public/lib/jquery-placeholder/jquery.placeholder.js"></script>
 
- -----------------------------------
+
 
  <!-- Head Libs -->
  <script src="../../public/lib/modernizr/modernizr.js"></script>

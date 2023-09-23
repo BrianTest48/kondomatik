@@ -218,6 +218,19 @@
 						<li class="nav-parent">
 							<a class="nav-link" href="#">
 								<i class="bx bx-cube" aria-hidden="true"></i>
+								<span>Gestion Documentaria</span>
+							</a>
+							<ul class="nav nav-children">
+								<li>
+									<a class="nav-link" href="#">
+										Registrar Documentos
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-parent">
+							<a class="nav-link" href="#">
+								<i class="bx bx-cube" aria-hidden="true"></i>
 								<span>Gestion Otros Ingresos</span>
 							</a>
 							<ul class="nav nav-children">

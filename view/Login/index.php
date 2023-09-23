@@ -16,7 +16,7 @@
             </a> -->
 
           
-            <p class="m-b-10">Sistema de Administracion de Condominios</p>
+            <h3 class="m-b-10">Sistema de Administracion de Condominios</h3>
 
             <div class="panel card-sign">
                 <div class="card-title-sign mt-3 text-end">
@@ -79,7 +79,7 @@
                 </div>
             </div>
 
-            <p class="text-center text-muted mt-3 mb-3">&copy; Copyright 2021. All Rights Reserved.</p>
+            <p class="text-center text-muted mt-3 mb-3">&copy; Copyright 2023. Derechos Reservados.</p>
         </div>
     </section>
     <!-- end: page -->

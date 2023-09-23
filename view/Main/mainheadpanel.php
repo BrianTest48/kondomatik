@@ -1,10 +1,10 @@
 <!-- start: header -->
 <header class="header">
     <div class="logo-container">
-        <!-- <a href="../4.0.0" class="logo">
-            <img src="../../public/img/logo.png" width="75" height="35" alt="Porto Admin" />
-        </a> -->
-
+        <a href="#" class="logo">
+            <!--<img src="../../public/img/logo.png" width="75" height="35" alt="Porto Admin" />-->
+            <h3 style="margin-top: 0px">Kondomatik</h3>
+        </a>
         <div class="d-md-none toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
             <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
         </div>
@@ -192,8 +192,8 @@
                     <img src="../../public/img/!logged-user.jpg" alt="Joseph Doe" class="rounded-circle" data-lock-picture="../../public/img/!logged-user.jpg" />
                 </figure>
                 <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@okler.com">
-                    <span class="name">John Doe Junior</span>
-                    <span class="role">Administrator</span>
+                    <span class="name">Administrador</span>
+                    <span class="role">Administrador</span>
                 </div>
 
                 <i class="fa custom-caret"></i>
@@ -202,14 +202,14 @@
             <div class="dropdown-menu">
                 <ul class="list-unstyled mb-2">
                     <li class="divider"></li>
-                    <li>
+                    <!--<li>
                         <a role="menuitem" tabindex="-1" href="#"><i class="bx bx-user-circle"></i> My Profile</a>
                     </li>
                     <li>
                         <a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="bx bx-lock"></i> Lock Screen</a>
-                    </li>
+                    </li>-->
                     <li>
-                        <a role="menuitem" tabindex="-1" href="../Main/logout.php"><i class="bx bx-power-off"></i> Logout</a>
+                        <a role="menuitem" tabindex="-1" href="../Main/logout.php"><i class="bx bx-power-off"></i> Salir</a>
                     </li>
                 </ul>
             </div>

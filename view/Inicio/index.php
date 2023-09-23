@@ -912,13 +912,7 @@
                 </div>-->
                 <!-- Content Wrapper END -->
 
-                <!-- Footer START -->
-                <footer class="footer">
-                    <div class="footer-content">
-                        <p class="m-b-0">Copyright © 2023 School</p>
-                    </div>
-                </footer>
-                <!-- Footer END -->
+
 
             </div>
             <!-- Page Container END -->
