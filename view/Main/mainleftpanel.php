@@ -226,6 +226,11 @@
 										Registrar Documentos
 									</a>
 								</li>
+								<li>
+									<a class="nav-link" href="#">
+										Listar Documentos
+									</a>
+								</li>
 							</ul>
 						</li>
 						<li class="nav-parent">
