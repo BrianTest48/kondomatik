@@ -1,59 +1,71 @@
 <!doctype html>
 <html class="fixed">
-	<head>
+<head>
 
-		<?php require_once("../Main/ListarHead.php");?>
+<?php require_once("../Main/mainhead.php");?>
 
-	</head>
-	<body>
-		<section class="body">
-			<div class="inner-wrapper">
-				<!-- start: sidebar -->
-				<aside id="sidebar-left" class="sidebar-left">
 
-				    <div class="sidebar-header">
-				        <div class="sidebar-title">
-				            Navigation
-				        </div>
-				        <div class="sidebar-toggle d-none d-md-block" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
-				            <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
-				        </div>
-				    </div>
-				</aside>
-				<!-- end: sidebar -->
-				<section role="main" class="content-body">
-					<header class="page-header">
-						<h2>Gestión de Documentaria</h2>
-					</header>
+</head>
+<body>
+<section class="body">
+	<header class="header">
+	</header>
+
+	<?php 
+			require_once("../Main/mainheadpanel.php"); 
+	?>
+
+	<div class="page-container">
+	<div class="inner-wrapper">
+		<aside id="sidebar-left" class="sidebar-left">
+			 <?php 
+				require_once("../Main/mainleftpanel.php"); 
+			  ?>
+		</aside>
+		<section role="main" class="content-body">
+			<header class="page-header">
+				<h2>Gestión Documentaria</h2>
+			</header>
+			<div class="row">
+				<div class="col-md-12">
 					<div class="mb-3">
-                            <h4>Gestión de Documentos</h4>
-                        </div>
-
-						<div class="mb-3">
-							<label for="tipo_documento">Mes:&nbsp;</label>
-							<select id="tipo_documento" name="tipo_documento">
-								<option value="gestion1">Mes 1</option>
-								<option value="gestion2">Mes 2</option>
-								<option value="gestion3">Mes 3</option>
+						<h4>Gestión de Documentos</h4>
+					</div>
+					<div class="form-group row pb-3">
+						<label class="col-lg-6 col-form-label text-start pt-2">Mes:</label>
+						<div class="col-lg-3 text-end">
+							<select class="form-select" data-plugin-multiselect data-plugin-options='{ "maxHeight": 20 }' id="ms_example1">
+								<option value="cheese" selected>Mes 1</option>
+								<option value="tomatoes">Mes 2</option>
+								<option value="mozarella">Mes 3</option>
+								<option value="mushrooms">Mes 4</option>
+								<option value="pepperoni">Mes 5</option>
+								<option value="onions">Mes 6</option>
 							</select>
 						</div>
-						<div>
-							<label for="busqueda">Buscar:</label>
-							<input type="text" id="busqueda" name="busqueda" size="50"> 
-							<button>Buscar</button>
+					</div>
+
+
+						<div class="input-group">
+							<input type="text" class="form-control" id="inputDefault" style="width: 80%;">
+							<button type="button" class="btn btn-default ms-2">Buscar</button>
 						</div>
 						<br>
-						<div>
-							<label>Estado:</label>
-							<input type="radio" id="estado1" name="estado" value="opcion1">
-							<label for="estado1">Todos</label>
-
-							<input type="radio" id="estado2" name="estado" value="opcion2">
-							<label for="estado2">Activos</label>
-
-							<input type="radio" id="estado3" name="estado" value="opcion3">
-							<label for="estado3">Inactivos</label>
+				
+						<div class="radio">
+							<label>
+								<label>Estado:</label>
+								<input type="radio" name="optionsRadios" id="estado1" value="estado1">
+								<label for="estado1">Todos</label>&nbsp;&nbsp;
+								<input type="radio" name="optionsRadios" id="estado2" value="estado2">
+								<label for="estado2">Activos</label>&nbsp;&nbsp;
+								<input type="radio" name="optionsRadios" id="estado3" value="estado3">
+								<label for="estado3">Inactivos</label>
+							</label>
 						</div>
+
+
+
 						<div class="row">
 							<div class="col">
 								<section class="card">
@@ -121,9 +133,7 @@
 			</div>
 		</section>
 
-		<?php
-		require_once("../Main/Listarjs.php");
-		?>
+		<?php require_once("../Main/mainjs.php"); ?>
 
 	</body>
 </html>

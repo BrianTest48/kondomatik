@@ -222,12 +222,12 @@
 							</a>
 							<ul class="nav nav-children">
 								<li>
-									<a class="nav-link" href="../GestionDocumentaria/Registrar/index.php">
+									<a class="nav-link" href="../RegistrarDocumentacion/index.php">
 										Registrar Documentos
 									</a>
 								</li>
 								<li>
-									<a class="nav-link" href="../GestionDocumentaria/Listar/index.php">
+									<a class="nav-link" href="../ListarDocumentacion/index.php">
 										Listar Documentos
 									</a>
 								</li>
