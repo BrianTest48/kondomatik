@@ -10,9 +10,10 @@
         
         case 'ingresar':
             $datos = $usuario->loguear_usuario($_POST["alias"], $_POST["clave"]);
+            //VIENE DEL JS 
             if(is_array($datos) == true and count($datos) > 0){
-                $_SESSION["id"] = $datos[0]["id"];
-                $_SESSION["nombres"] = $datos[0]["nombres"];
+                $_SESSION["id"] = $datos[0]["idUsuario"];
+                $_SESSION["nombres"] = $datos[0]["Nom_Nombres"];
                 echo "1";
             }else{
                 echo "0";
