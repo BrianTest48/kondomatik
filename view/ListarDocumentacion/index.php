@@ -4,7 +4,6 @@
 
 <?php require_once("../Main/mainhead.php");?>
 
-
 </head>
 <body>
 <section class="body">
@@ -31,6 +30,7 @@
 					<div class="mb-3">
 						<h4>Gestión de Documentos</h4>
 					</div>
+						<input type="hidden" id="IdGestionDocumento" name="IdGestionDocumento">
 					<div class="form-group row pb-3">
 						<label class="col-lg-6 col-form-label text-start pt-2">Mes:</label>
 						<div class="col-lg-3 text-end">
@@ -44,8 +44,6 @@
 							</select>
 						</div>
 					</div>
-
-
 						<div class="input-group">
 							<input type="text" class="form-control" id="inputDefault" style="width: 80%;">
 							<button type="button" class="btn btn-default ms-2">Buscar</button>
@@ -63,77 +61,65 @@
 								<label for="estado3">Inactivos</label>
 							</label>
 						</div>
-
-
-
-						<div class="row">
-							<div class="col">
-								<section class="card">
-									<header class="card-header">
-										<div class="card-actions">
-											<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
-											<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+						<div class="container">
+							<div class="row">
+								<div class="col-8">
+									<section class="card">
+										<header class="card-header">
+											<div class="card-actions">
+												<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+												<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+											</div>
+										</header>
+										<div class="card-body">
+											<div class="table-wrapper">
+												<table id="documento_data" class="table table-responsive-lg table-bordered table-striped table-sm mb-0">
+													<thead>
+														<tr>
+															<th class="text-center align-middle">Fecha</th>
+															<th class="text-center align-middle">Tipo</th>
+															<th class="text-center align-middle">Nombre</th>
+															<th class="text-center align-middle">Estado</th>
+															<th class="text-center align-middle">Vista</th>
+															<th class="text-center align-middle">Editar</th>
+															<th class="text-center align-middle">Eliminar</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="text-center align-middle">test</td>
+															<td class="text-center align-middle">test</td>
+															<td class="text-center align-middle">test</td>
+															<td class="text-center align-middle">test</td>
+															<td class="text-center align-middle">test</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
 										</div>
-									</header>
-									<div class="card-body">
-										<table class="table table-responsive-lg table-bordered table-striped table-sm mb-0">
-											<thead>
-												<tr>
-													<th class="text-end">Fecha</th>
-													<th class="text-end">Tipo</th>
-													<th class="text-end">Nombre</th>
-													<th class="text-end">Estado</th>
-													<th class="text-end">Vista</th>
-													<th class="text-end">Editar</th>
-													<th class="text-end">Eliminar</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="text-end">$1.38</td>
-													<td class="text-end">-0.01</td>
-													<td class="text-end">-0.36%</td>
-													<td class="text-end">$1.39</td>
-													<td class="text-end">$1.39</td>
-													<td class="text-end">$1.38</td>
-													<td class="text-end">9,395</td>
-												</tr>
-												<tr>
-													<td class="text-end">$1.15</td>
-													<td class="text-end">  +0.02</td>
-													<td class="text-end">1.32%</td>
-													<td class="text-end">$1.14</td>
-													<td class="text-end">$1.15</td>
-													<td class="text-end">$1.13</td>
-													<td class="text-end">56,431</td>
-												</tr>
-												<tr>
-													<td class="text-end">$4.00</td>
-													<td class="text-end">-0.04</td>
-													<td class="text-end">-0.99%</td>
-													<td class="text-end">$4.01</td>
-													<td class="text-end">$4.05</td>
-													<td class="text-end">$4.00</td>
-													<td class="text-end">90,641</td>
-												</tr>
-
-											</tbody>
-										</table>
-									</div>
-								</section>
+									</section>
+								</div>
 							</div>
 						</div>
+
 						<br>
 						<div class="mb-3">
-                            <button type="button" class="btn btn-secondary">Cancelar</button>
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-                        </div>
-					<!-- end: page -->
-				</section>
+							<button type="button" class="btn btn-secondary">Cancelar</button>
+							<button type="button" class="btn btn-primary" id='btnGuardar'>Guardar</button>
+                   		 </div>
+                </section>
 			</div>
 		</section>
 
+
 		<?php require_once("../Main/mainjs.php"); ?>
 
+		
+		<?php 
+          //require_once("../RegistrarDocumentacion/modaldocumento.php")  
+		  
+   		  ?>
+
+		<!-- <script src="registrardocumento.js"></script> -->
 	</body>
 </html>
