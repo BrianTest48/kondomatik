@@ -4,7 +4,7 @@
         public function loguear_usuario($usuario, $clave) {
             $conectar = parent::conexion();
             parent::set_names();
-            $sql = "SELECT * FROM usuarios WHERE user=?  AND clave=? AND estado = 1;";
+            $sql = "SELECT * FROM tbusuarios WHERE Des_Email=? AND Des_Clave=? AND Flg_Estado = 1;";
             $sql = $conectar->prepare($sql);
             $sql->bindValue(1, $usuario);
             $sql->bindValue(2, $clave);
