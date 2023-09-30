@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="fixed">
+<html lang="es" class="fixed">
 <head>
 
 <?php require_once("../Main/mainhead.php");?>
@@ -61,47 +61,66 @@
 								<label for="estado3">Inactivos</label>
 							</label>
 						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-8">
-									<section class="card">
-										<header class="card-header">
-											<div class="card-actions">
-												<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
-												<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
-											</div>
-										</header>
-										<div class="card-body">
-											<div class="table-wrapper">
-												<table id="documento_data" class="table table-responsive-lg table-bordered table-striped table-sm mb-0">
-													<thead>
-														<tr>
-															<th class="text-center align-middle">Fecha</th>
-															<th class="text-center align-middle">Tipo</th>
-															<th class="text-center align-middle">Nombre</th>
-															<th class="text-center align-middle">Estado</th>
-															<th class="text-center align-middle">Vista</th>
-															<th class="text-center align-middle">Editar</th>
-															<th class="text-center align-middle">Eliminar</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td class="text-center align-middle">test</td>
-															<td class="text-center align-middle">test</td>
-															<td class="text-center align-middle">test</td>
-															<td class="text-center align-middle">test</td>
-															<td class="text-center align-middle">test</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
+
+
+
+						<div class="row">
+							<div class="col">
+								<section class="card">
+									<header class="card-header">
+										<div class="card-actions">
+											<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+											<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
 										</div>
-									</section>
-								</div>
+									</header>
+									<div class="card-body">
+										<table class="table table-responsive-lg table-bordered table-striped table-sm mb-0">
+											<thead>
+												<tr>
+													<th class="text-end">Fecha</th>
+													<th class="text-end">Tipo</th>
+													<th class="text-end">Nombre</th>
+													<th class="text-end">Estado</th>
+													<th class="text-end">Vista</th>
+													<th class="text-end">Editar</th>
+													<th class="text-end">Eliminar</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-end">02/05/2020</td>
+													<td class="text-end">PDF</td>
+													<td class="text-end">Juan</td>
+													<td class="text-end">Activo</td>
+													<td class="text-end">Vista</td>
+													<td class="text-end">Editar</td>
+													<td class="text-end">Eliminar</td>
+												</tr>
+												<tr>
+													<td class="text-end">02/05/2020</td>
+													<td class="text-end">PDF</td>
+													<td class="text-end">Juan</td>
+													<td class="text-end">Activo</td>
+													<td class="text-end">Vista</td>
+													<td class="text-end">Editar</td>
+													<td class="text-end">Eliminar</td>
+												</tr>
+												<tr>
+													<td class="text-end">02/05/2020</td>
+													<td class="text-end">PDF</td>
+													<td class="text-end">Juan</td>
+													<td class="text-end">Activo</td>
+													<td class="text-end">Vista</td>
+													<td class="text-end">Editar</td>
+													<td class="text-end">Eliminar</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</section>
 							</div>
 						</div>
-
 						<br>
 						<div class="mb-3">
 							<button type="button" class="btn btn-secondary">Cancelar</button>

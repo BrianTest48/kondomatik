@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="es" class="h-100">
 
 <head>
     <?php require_once("../Main/mainhead.php") ?>
