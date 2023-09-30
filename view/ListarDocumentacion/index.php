@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="fixed">
+<html lang="es" class="fixed">
 <head>
 
 <?php require_once("../Main/mainhead.php");?>
@@ -90,31 +90,31 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td class="text-end">$1.38</td>
-													<td class="text-end">-0.01</td>
-													<td class="text-end">-0.36%</td>
-													<td class="text-end">$1.39</td>
-													<td class="text-end">$1.39</td>
-													<td class="text-end">$1.38</td>
-													<td class="text-end">9,395</td>
+													<td class="text-end">02/05/2020</td>
+													<td class="text-end">PDF</td>
+													<td class="text-end">Juan</td>
+													<td class="text-end">Activo</td>
+													<td class="text-end">Vista</td>
+													<td class="text-end">Editar</td>
+													<td class="text-end">Eliminar</td>
 												</tr>
 												<tr>
-													<td class="text-end">$1.15</td>
-													<td class="text-end">  +0.02</td>
-													<td class="text-end">1.32%</td>
-													<td class="text-end">$1.14</td>
-													<td class="text-end">$1.15</td>
-													<td class="text-end">$1.13</td>
-													<td class="text-end">56,431</td>
+													<td class="text-end">02/05/2020</td>
+													<td class="text-end">PDF</td>
+													<td class="text-end">Juan</td>
+													<td class="text-end">Activo</td>
+													<td class="text-end">Vista</td>
+													<td class="text-end">Editar</td>
+													<td class="text-end">Eliminar</td>
 												</tr>
 												<tr>
-													<td class="text-end">$4.00</td>
-													<td class="text-end">-0.04</td>
-													<td class="text-end">-0.99%</td>
-													<td class="text-end">$4.01</td>
-													<td class="text-end">$4.05</td>
-													<td class="text-end">$4.00</td>
-													<td class="text-end">90,641</td>
+													<td class="text-end">02/05/2020</td>
+													<td class="text-end">PDF</td>
+													<td class="text-end">Juan</td>
+													<td class="text-end">Activo</td>
+													<td class="text-end">Vista</td>
+													<td class="text-end">Editar</td>
+													<td class="text-end">Eliminar</td>
 												</tr>
 
 											</tbody>
