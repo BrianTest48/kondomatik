@@ -113,7 +113,7 @@
 						<li class="nav-parent">
 							<a class="nav-link" href="#">
 								<i class="bx bx-cube" aria-hidden="true"></i>
-								<span>Gestion de Presupuesto - Cuota de Mantenimiento</span>
+								<span>Gestion de Presupuesto</span>
 							</a>
 							<ul class="nav nav-children">
 								<li>
@@ -141,7 +141,7 @@
 						<li class="nav-parent">
 							<a class="nav-link" href="#">
 								<i class="bx bx-cube" aria-hidden="true"></i>
-								<span>Gestion Contable (Ingresos / Egresos)</span>
+								<span>Gestion Contable</span>
 							</a>
 							<ul class="nav nav-children">
 								<li>
@@ -159,7 +159,7 @@
 						<li class="nav-parent">
 							<a class="nav-link" href="#">
 								<i class="bx bx-cube" aria-hidden="true"></i>
-								<span>Gestion de Mantenimientos Programados</span>
+								<span>Gestion de Mantenimientos</span>
 							</a>
 							<ul class="nav nav-children">
 								<li>
@@ -341,6 +341,11 @@
 								<li>
 									<a class="nav-link" href="#">
 										Mantenimiento de Telefonos de Personal
+									</a>
+								</li>
+								<li>
+									<a class="nav-link" href="../ListarDocumentacion/index.php">
+										Mantenimiento de Tipo de documento
 									</a>
 								</li>
 							</ul>

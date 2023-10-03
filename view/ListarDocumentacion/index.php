@@ -31,41 +31,38 @@
 						<h4>Gestión de Documentos</h4>
 					</div>
 						<input type="hidden" id="IdGestionDocumento" name="IdGestionDocumento">
-					<div class="form-group row pb-3">
-						<label class="col-lg-6 col-form-label text-start pt-2">Mes:</label>
-						<div class="col-lg-3 text-end">
-							<select class="form-select" data-plugin-multiselect data-plugin-options='{ "maxHeight": 20 }' id="ms_example1">
-								<option value="cheese" selected>Mes 1</option>
-								<option value="tomatoes">Mes 2</option>
-								<option value="mozarella">Mes 3</option>
-								<option value="mushrooms">Mes 4</option>
-								<option value="pepperoni">Mes 5</option>
-								<option value="onions">Mes 6</option>
-							</select>
+						<div class="form-group row pb-3">
+							<label class="col-lg-9 col-form-label text-end pt-2">Mes:</label>
+							<div class="col-lg-3 text-end">
+								<select class="form-select form-select-sm" data-plugin-multiselect data-plugin-options='{ "maxHeight": 10 }' id="ms_example1">
+									<option value="cheese" selected>Mes 1</option>
+									<option value="tomatoes">Mes 2</option>
+									<option value="mozarella">Mes 3</option>
+									<option value="mushrooms">Mes 4</option>
+									<option value="pepperoni">Mes 5</option>
+									<option value="onions">Mes 6</option>
+								</select>
+							</div>
 						</div>
-					</div>
 						<div class="input-group">
 							<input type="text" class="form-control" id="inputDefault" style="width: 80%;">
 							<button type="button" class="btn btn-default ms-2">Buscar</button>
 						</div>
 						<br>
-				
 						<div class="radio">
 							<label>
 								<label>Estado:</label>
 								<input type="radio" name="optionsRadios" id="estado1" value="estado1">
-								<label for="estado1">Todos</label>&nbsp;&nbsp;
+								<label for="estado1" style="margin-right: 60px;">Todos</label>
 								<input type="radio" name="optionsRadios" id="estado2" value="estado2">
-								<label for="estado2">Activos</label>&nbsp;&nbsp;
+								<label for="estado2" style="margin-right: 60px;">Activos</label>
 								<input type="radio" name="optionsRadios" id="estado3" value="estado3">
 								<label for="estado3">Inactivos</label>
 							</label>
 						</div>
 
-
-
 						<div class="row">
-							<div class="col">
+							<div class="col-lg-8 col-form-label text-end pt-2">
 								<section class="card">
 									<header class="card-header">
 										<div class="card-actions">
@@ -77,42 +74,42 @@
 										<table class="table table-responsive-lg table-bordered table-striped table-sm mb-0">
 											<thead>
 												<tr>
-													<th class="text-end">Fecha</th>
-													<th class="text-end">Tipo</th>
-													<th class="text-end">Nombre</th>
-													<th class="text-end">Estado</th>
-													<th class="text-end">Vista</th>
-													<th class="text-end">Editar</th>
-													<th class="text-end">Eliminar</th>
+													<th class="text-center">Fecha</th>
+													<th class="text-center">Tipo</th>
+													<th class="text-center">Nombre</th>
+													<th class="text-center">Estado</th>
+													<th class="text-center">Vista</th>
+													<th class="text-center">Editar</th>
+													<th class="text-center">Eliminar</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td class="text-end">02/05/2020</td>
-													<td class="text-end">PDF</td>
-													<td class="text-end">Juan</td>
-													<td class="text-end">Activo</td>
-													<td class="text-end">Vista</td>
-													<td class="text-end">Editar</td>
-													<td class="text-end">Eliminar</td>
+													<td class="text-center">02/05/2020</td>
+													<td class="text-center">PDF</td>
+													<td class="text-center">Juan</td>
+													<td class="text-center">Activo</td>
+													<td class="text-center">Vista</td>
+													<td class="text-center">Editar</td>
+													<td class="text-center">Eliminar</td>
 												</tr>
 												<tr>
-													<td class="text-end">02/05/2020</td>
-													<td class="text-end">PDF</td>
-													<td class="text-end">Juan</td>
-													<td class="text-end">Activo</td>
-													<td class="text-end">Vista</td>
-													<td class="text-end">Editar</td>
-													<td class="text-end">Eliminar</td>
+													<td class="text-center">02/05/2020</td>
+													<td class="text-center">PDF</td>
+													<td class="text-center">Juan</td>
+													<td class="text-center">Activo</td>
+													<td class="text-center">Vista</td>
+													<td class="text-center">Editar</td>
+													<td class="text-center">Eliminar</td>
 												</tr>
 												<tr>
-													<td class="text-end">02/05/2020</td>
-													<td class="text-end">PDF</td>
-													<td class="text-end">Juan</td>
-													<td class="text-end">Activo</td>
-													<td class="text-end">Vista</td>
-													<td class="text-end">Editar</td>
-													<td class="text-end">Eliminar</td>
+													<td class="text-center">02/05/2020</td>
+													<td class="text-center">PDF</td>
+													<td class="text-center">Juan</td>
+													<td class="text-center">Activo</td>
+													<td class="text-center">Vista</td>
+													<td class="text-center">Editar</td>
+													<td class="text-center">Eliminar</td>
 												</tr>
 
 											</tbody>

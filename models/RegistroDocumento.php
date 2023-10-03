@@ -32,13 +32,13 @@
         return $sql->rowCount();
     }
 
-    public function insert_documento($IdTipDocumentoGestion,$Des_Detalle,$Fec_Registro,$Des_RutaDocumento,$Des_NombreDocumento,$IdTipArchivo,$Flg_Busqueda,$Flg_Estado){
+    public function insert_documento($IdTipDocumentoGestion,$Des_Detalle,$Fec_Registro,$Des_RutaDocumento,$Des_NombreDocumento){
         $conectar= parent::conexion();
         parent::set_names();
         $sql = "INSERT INTO tmgestiondocumentos 
-                (IdTipDocumentoGestion, Des_Detalle, Fec_Registro, Des_RutaDocumento, Des_NombreDocumento, IdTipArchivo, Flg_Busqueda, Flg_Estado) 
+                (IdGestionDocumento, IdTipDocumentoGestion, Des_Detalle, Fec_Registro, Des_RutaDocumento, Des_NombreDocumento, IdTipArchivo, Flg_Busqueda, Flg_Estado) 
                 VALUES 
-                (Null, ?, ?, ?, ?, ?, 1, 1)";
+                (NULL, ?, ?, ?, ?, ?, 1, 1, 1)";
         $sql = $conectar->prepare($sql);
         $sql->bindValue(1, $IdTipDocumentoGestion);
         $sql->bindValue(2, $Des_Detalle);
@@ -46,17 +46,8 @@
         //$sql->bindValue(3, date('Y-m-d'), PDO::PARAM_STR);
         $sql->bindValue(4, $Des_RutaDocumento);
         $sql->bindValue(5, $Des_NombreDocumento);
-        $sql->bindValue(6, $IdTipArchivo);
-        $sql->bindValue(7, $Flg_Busqueda);
-        $sql->bindValue(8, $Flg_Estado);
-   
-        try {
-            $sql->execute();
-            return true;
-        } catch (PDOException $e) {
-            echo "Error al insertar el Documento: " . $e->getMessage();
-            throw $e;
-        }
+        $sql->execute();
+        return $resultado = $sql->fetchAll();
     }
     
 
