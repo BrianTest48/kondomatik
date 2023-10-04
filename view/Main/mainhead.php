@@ -22,6 +22,7 @@
  <link rel="stylesheet" href="../../public/lib/jquery-ui/jquery-ui.theme.css" />
  <link rel="stylesheet" href="../../public/lib/bootstrap-multiselect/css/bootstrap-multiselect.css" />
  <link rel="stylesheet" href="../../public/lib/morris/morris.css" />
+ 
 
  <!-- Theme CSS -->
  <link rel="stylesheet" href="../../public/css/theme.css" />
@@ -31,5 +32,9 @@
 
  <!-- Theme Custom CSS -->
  <link rel="stylesheet" href="../../public/css/custom.css">
+
+
+ <!-- DataTable -->
+<link href="../../public/lib/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
 
  <!------------------>

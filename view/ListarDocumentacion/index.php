@@ -65,13 +65,33 @@
 							<div class="col-lg-8 col-form-label text-end pt-2">
 								<section class="card">
 									<header class="card-header">
-										<div class="card-actions">
-											<a href="#" class="card-action card-action-toggle" data-card-toggle></a>
-											<a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
-										</div>
+										
 									</header>
+
 									<div class="card-body">
-										<table class="table table-responsive-lg table-bordered table-striped table-sm mb-0">
+										<div class="table-wrapper">
+											<table id="listardocumento_data" class="display min-w850" style="width: 100%">
+												<thead>
+													<tr>
+														<th class="wd-15p">Id</th>
+														<th class="wd-15p">Fecha</th>
+														<th class="wd-15p">Tipo</th>
+														<th class="wd-15p">Nombre</th>
+														<th class="wd-15p">Estado</th>
+														<th class="wd-15p">Vista</th>
+														<th class="wd-15p">Modificar</th>
+														<th class="wd-15p">Eliminar</th>
+													</tr>
+												</thead>
+												<tbody>
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<!-- <div class="card-body">
+										<table class="table table-responsive-lg table-bordered table-striped table-sm mb-0" id="listardocumento_data">
 											<thead>
 												<tr>
 													<th class="text-center">Fecha</th>
@@ -84,37 +104,10 @@
 												</tr>
 											</thead>
 											<tbody>
-												<tr>
-													<td class="text-center">02/05/2020</td>
-													<td class="text-center">PDF</td>
-													<td class="text-center">Juan</td>
-													<td class="text-center">Activo</td>
-													<td class="text-center">Vista</td>
-													<td class="text-center">Editar</td>
-													<td class="text-center">Eliminar</td>
-												</tr>
-												<tr>
-													<td class="text-center">02/05/2020</td>
-													<td class="text-center">PDF</td>
-													<td class="text-center">Juan</td>
-													<td class="text-center">Activo</td>
-													<td class="text-center">Vista</td>
-													<td class="text-center">Editar</td>
-													<td class="text-center">Eliminar</td>
-												</tr>
-												<tr>
-													<td class="text-center">02/05/2020</td>
-													<td class="text-center">PDF</td>
-													<td class="text-center">Juan</td>
-													<td class="text-center">Activo</td>
-													<td class="text-center">Vista</td>
-													<td class="text-center">Editar</td>
-													<td class="text-center">Eliminar</td>
-												</tr>
 
 											</tbody>
 										</table>
-									</div>
+									</div> -->
 								</section>
 							</div>
 						</div>
@@ -136,6 +129,6 @@
 		  
    		  ?>
 
-		<!-- <script src="registrardocumento.js"></script> -->
+		<script src="listardocumento.js"></script> 
 	</body>
 </html>

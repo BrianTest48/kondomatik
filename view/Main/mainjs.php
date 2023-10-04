@@ -9,6 +9,7 @@
  <script src="../../public/lib/magnific-popup/jquery.magnific-popup.js"></script>
  <script src="../../public/lib/jquery-placeholder/jquery.placeholder.js"></script>
 
+ <!-- <script src="../../public/lib/bootstrap-select/dist/js/bootstrap-select.min.js"></script> -->
 
 
  <!-- Head Libs -->
@@ -55,4 +56,10 @@
  <script src="../../public/lib/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
  <script src="../../public/lib/jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
 
- <!----------------->
+ <!-- Datatable -->
+<script src="../../public/lib/datatables/js/jquery.dataTables.min.js"></script>
+<script src="../../public/js/plugins-init/datatables.init.js"></script>
+
+ <!-------moment--js-------->
+ <script src="../../public/lib/moment/moment.js"></script>
+ <script src="../../public/lib/moment/moment-timezone.js"></script>

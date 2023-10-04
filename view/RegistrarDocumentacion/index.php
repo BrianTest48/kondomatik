@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <script src="registrardocumento.js"></script>
+    
 </head>
 <body>
     <section class="body">
@@ -32,7 +33,7 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="input-group">
-                                        <input type="date" id="Fec_Registro" name="Fec_Registro" class="form-control">
+                                        <input type="date" id="Fec_Registro" name="Fec_Registro" class="form-control" disabled>
                                     </div>
                                 </div>
                                 <div class="col-lg-2 text-end">
@@ -50,12 +51,7 @@
                                     </div>
                                     <div class="col-lg-4">
                                         <select class="form-control" data-plugin-multiselect data-plugin-options='{ "maxHeight": 200 }' name="IdTipDocumentoGestion" id="IdTipDocumentoGestion">
-                                            <option value="1" selected>ACUERDO</option>
-                                            <option value="MINUTA">MINUTA</option>
-                                            <option value="NOTIFICACIÓN">NOTIFICACIÓN</option>
-                                            <option value="ACTA DE REUNION">ACTA DE REUNION</option>
-                                            <option value="BOLETIN">BOLETÍN</option>
-                                            <option value="RECIBO DE AGUA">RECIBO DE AGUA</option>
+
                                         </select>
                                     </div>
                                 </div>

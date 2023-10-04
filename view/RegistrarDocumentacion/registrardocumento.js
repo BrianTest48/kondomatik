@@ -51,6 +51,15 @@ $(document).ready(function () {
     $("#document_form").on("submit", function (e) {
         guardaryeditar(e);
     });
+
+    $.post("../../controller/TipoDocumentoControlador.php?op=combo", function (data){
+        $("#IdTipDocumentoGestion").html(data);
+    });
+
+    let fecha_act = moment().tz('America/Lima').format("YYYY-MM-DD");
+    console.log(fecha_act);
+
+    $('#Fec_Registro').val(fecha_act);
 });
 
 

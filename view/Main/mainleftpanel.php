@@ -344,7 +344,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="nav-link" href="../ListarDocumentacion/index.php">
+									<a class="nav-link" href="../MantenimientoTipo/index.php">
 										Mantenimiento de Tipo de documento
 									</a>
 								</li>
