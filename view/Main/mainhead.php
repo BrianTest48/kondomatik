@@ -38,3 +38,6 @@
 <link href="../../public/lib/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
 
  <!------------------>
+
+ <!-- Select2 CSS -->
+<link rel="stylesheet" href="../../public/lib/select2/css/select2.min.css">

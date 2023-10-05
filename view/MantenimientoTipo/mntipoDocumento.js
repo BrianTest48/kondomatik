@@ -95,7 +95,7 @@ function editar(IdTipDocumentoGestion){
 
     console.log(IdTipDocumentoGestion);
 
-    $('#documentomdltitulo').html('Editar Registro');
+    $('#tipodocutitulo').html('Editar Registro');
 
     $.post("../../controller/TipoDocumentoControlador.php?op=mostrar",{IdTipDocumentoGestion:IdTipDocumentoGestion},function(data){
         data = JSON.parse(data);
@@ -133,7 +133,8 @@ function eliminar(IdTipDocumentoGestion){
         )
         }
     }
-    )}
+    )
+}
    
 
 $(document).on("click","#btnnuevotipo", function(){

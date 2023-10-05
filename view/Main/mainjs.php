@@ -63,3 +63,6 @@
  <!-------moment--js-------->
  <script src="../../public/lib/moment/moment.js"></script>
  <script src="../../public/lib/moment/moment-timezone.js"></script>
+
+ <!-- Select2 JS -->
+<script src="../../public/lib/select2/js/select2.full.min.js"></script>

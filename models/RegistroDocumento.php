@@ -4,7 +4,10 @@
     public function get_documento(){
         $conectar = parent::conexion();
         parent::set_names();
-        $sql = "SELECT * FROM tmgestiondocumentos WHERE Flg_Estado=1";
+        $sql = "SELECT tgd.*, tdoc.Nom_TipoDocumentoGestion as nombretipo FROM tmgestiondocumentos tgd
+                INNER JOIN tbtipodocumentogestion tdoc
+                ON tdoc.IdTipDocumentoGestion = tgd.IdTipDocumentoGestion
+                WHERE tgd.Flg_Estado=1;";
         $sql = $conectar->prepare($sql);
         $sql->execute();
         return $resultado = $sql->fetchAll();
@@ -32,53 +35,75 @@
         return $sql->rowCount();
     }
 
-    public function insert_documento($IdTipDocumentoGestion,$Des_Detalle,$Fec_Registro,$Des_RutaDocumento,$Des_NombreDocumento){
+    public function insert_documento($IdGenerator, $TipoDocGes, $Des_Detalle, $Fec_Registro, $Des_RutaDocumento, $Des_NombreDocumento){
         $conectar= parent::conexion();
         parent::set_names();
         $sql = "INSERT INTO tmgestiondocumentos 
-                (IdGestionDocumento, IdTipDocumentoGestion, Des_Detalle, Fec_Registro, Des_RutaDocumento, Des_NombreDocumento, IdTipArchivo, Flg_Busqueda, Flg_Estado) 
+                (IdGestionDocumento,id_generator , IdTipDocumentoGestion, Des_Detalle, Fec_Registro, Des_RutaDocumento, Des_NombreDocumento, IdTipArchivo, Flg_Busqueda, Flg_Estado) 
                 VALUES 
-                (NULL, ?, ?, ?, ?, ?, 1, 1, 1)";
+                (NULL,?, ?, ?, ?, ?, ?, 1, 1, 1)";
         $sql = $conectar->prepare($sql);
-        $sql->bindValue(1, $IdTipDocumentoGestion);
-        $sql->bindValue(2, $Des_Detalle);
-        $sql->bindValue(3, $Fec_Registro);
+        $sql->bindValue(1, $IdGenerator);
+        $sql->bindValue(2, $TipoDocGes);
+        $sql->bindValue(3, $Des_Detalle);
+        $sql->bindValue(4, $Fec_Registro);
         //$sql->bindValue(3, date('Y-m-d'), PDO::PARAM_STR);
-        $sql->bindValue(4, $Des_RutaDocumento);
-        $sql->bindValue(5, $Des_NombreDocumento);
+        $sql->bindValue(5, $Des_RutaDocumento);
+        $sql->bindValue(6, $Des_NombreDocumento);
         $sql->execute();
         return $resultado = $sql->fetchAll();
     }
     
 
-    public function update_documento($IdGestionDocumento,$IdTipDocumentoGestion,$Des_Detalle,$Fec_Registro,$Des_RutaDocumento,$Des_NombreDocumento,$IdTipArchivo,$Flg_Busqueda,$Flg_Estado ){
+    public function update_documento($IdGestionDocumento,$IdTipDocumentoGestion,$Des_Detalle,$Des_NombreDocumento){
         $conectar= parent::conexion();
         parent::set_names();
         $sql = "UPDATE tmgestiondocumentos
         SET
             IdTipDocumentoGestion=?,
             Des_Detalle=?,
-            Fec_Registro=?,
-            Des_RutaDocumento=?,
-            Des_NombreDocumento=?,
-            IdTipArchivo=?,
-            Flg_Busqueda=?,
-            Flg_Estado=?
+            Des_NombreDocumento=?
         WHERE
             IdGestionDocumento = ?";
         $sql = $conectar->prepare($sql);
         $sql->bindValue(1, $IdTipDocumentoGestion);
         $sql->bindValue(2, $Des_Detalle);
-        $sql->bindValue(3, $Fec_Registro);
-        $sql->bindValue(4, $Des_RutaDocumento);
-        $sql->bindValue(5, $Des_NombreDocumento);
-        $sql->bindValue(6, $IdTipArchivo);
-        $sql->bindValue(7, $Flg_Busqueda);       
-        $sql->bindValue(8, $IdGestionDocumento);
-        $sql->bindValue(9, $Flg_Estado);
+        $sql->bindValue(3, $Des_NombreDocumento);
+        $sql->bindValue(4, $IdGestionDocumento);
         $sql->execute();
         return $resultado = $sql->fetchAll();
 
+    }
+
+    public function update_documento_file($IdGestionDocumento,$IdTipDocumentoGestion,$Des_Detalle,$Des_NombreDocumento, $Des_ruta){
+        $conectar= parent::conexion();
+        parent::set_names();
+        $sql = "UPDATE tmgestiondocumentos
+        SET
+            IdTipDocumentoGestion=?,
+            Des_Detalle=?,
+            Des_NombreDocumento=?,
+            Des_RutaDocumento=?
+        WHERE
+            IdGestionDocumento = ?";
+        $sql = $conectar->prepare($sql);
+        $sql->bindValue(1, $IdTipDocumentoGestion);
+        $sql->bindValue(2, $Des_Detalle);
+        $sql->bindValue(3, $Des_NombreDocumento);
+        $sql->bindValue(4, $Des_ruta);
+        $sql->bindValue(5, $IdGestionDocumento);
+        $sql->execute();
+        return $resultado = $sql->fetchAll();
+
+    }
+
+    public function get_generator(){
+        $conectar = parent::conexion();
+        parent::set_names();
+        $sql = "SELECT id_generator FROM tmgestiondocumentos ORDER BY IdGestionDocumento  DESC LIMIT 1 ;";
+        $sql = $conectar->prepare($sql);
+        $sql->execute();
+        return $resultado = $sql->fetch();
     }
 
     }

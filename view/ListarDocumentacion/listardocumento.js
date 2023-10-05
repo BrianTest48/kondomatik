@@ -1,11 +1,19 @@
 var tabla;
 
 $(document).ready(function(){
-    console.log("prueba");
- tabla=$('#listardocumento_data').dataTable({
+    //console.log("prueba");
+    tabla=$('#listardocumento_data').dataTable({
    "aProcessing": true,
    "aServerSide": true,
    dom: 'Bfrtip',
+   "searching": false,
+   "columnDefs": [
+        {
+            "targets": [0], // Índice de la columna que deseas ocultar (en este caso, la tercera columna)
+            "visible": false, // Hacer la columna invisible
+            "searchable": false // No permitir que la columna sea buscada
+        }
+    ],
    buttons: [ 
                'copyHtml5',
                'excelHtml5',
@@ -14,7 +22,7 @@ $(document).ready(function(){
                'pdf'              
             ],
     "ajax":{
-        url: '../../controller/RegistroDocucontrolador.php?op=listar',
+        url: '../../controller/RegistroDocuControlador.php?op=listar',
         type : "get",
         dataType : "json",
         error: function(e){
@@ -28,11 +36,11 @@ $(document).ready(function(){
     "order": [[ 0, "asc" ]],
     "language": {
         "sProcessing":    "Procesando....",
-        "sLengthMenu":    "Monstrar _MENU_ registros",
+        "sLengthMenu":    "Mostrar _MENU_ registros",
         "sZeroRecords":   "No se encontraron resultados",
         "sEmptyTable":     "Ningún dato disponible en esta tabla",
-        "sInfo":           "Monstrando un total de _TOTAL_ registros",   
-        "sInfoEmpty":      "Monstrando un total de 0 registros", 
+        "sInfo":           "Mostrando un total de _TOTAL_ registros",   
+        "sInfoEmpty":      "Mostrando un total de 0 registros", 
         "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
         "sInfoPostFix":    "",
         "sSearch":         "Buscar:",
@@ -52,4 +60,69 @@ $(document).ready(function(){
     }
     }).dataTable();
 
+   
+
 });
+
+function vista(valor){
+    //console.log(valor);
+
+    $.ajax({
+        type: 'POST',
+        url: '../../controller/RegistroDocuControlador.php?op=mostrar',
+        data : {IdGestionDocumento : valor},
+        dataType: 'JSON',
+        success: function(data){
+            //console.log(data);
+            var pdfDiv = document.getElementById("pdfViewer");
+            //var pdfUrl = "http://localhost/kondomatik/Docs/GD004/Print%20de%20Modulos%20Kondomatik.pdf"; 
+            var pdfUrl = "../../Docs/"+data.id_generator+"/"+ data.Des_RutaDocumento; 
+
+            var embed = document.createElement("embed");
+            embed.src = pdfUrl;
+            embed.width = "100%";
+            embed.height = "100%";
+            pdfDiv.innerHTML = "";
+            pdfDiv.appendChild(embed);
+
+           
+        },
+        error: function (error) {
+            console.log(error);
+        }
+    });
+}
+
+function edit(valor){
+    window.open("../RegistrarDocumentacion/index.php?id="+valor, "_self");
+}
+
+function eliminar(valor){
+    swal.fire({
+        title: "Gestion Documento",
+        text: "Desea eliminar el registro?",
+        icon: "error",
+        showCancelButton: true,
+        confirmButtonText: 'Si',
+        cancelButtonText: 'No',
+        reverseButtons: true
+
+   }).then((result) => {
+        if (result.isConfirmed) {
+            
+            $.post("../../controller/RegistroDocuControlador.php?op=eliminar",{IdGestionDocumento: valor},function (data) {
+                $('#listardocumento_data').DataTable().ajax.reload();
+            });
+
+            $('#listardocumento_data').DataTable().ajax.reload();
+
+            swal.fire(
+                    'Eliminado  !',
+                    'El registro se elimino correctamente.',
+                    'success'
+                )
+            }
+        }
+    )
+}
+

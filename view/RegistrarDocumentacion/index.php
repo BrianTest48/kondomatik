@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="fixed">
 <head>
+    <title>Kondomatik - Registro Docuemntos</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <?php require_once("../Main/mainhead.php"); ?>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -27,24 +28,25 @@
                         <div class="col-md-12">
                             <h3>Nuevo Documento</h3>
                             <form method="post" id="document_form" enctype="multipart/form-data">
-                            <div class="row mb-3">
-                                <div class="col-lg-2 text-end">
-                                    <label class="control-label pt-1">Fecha de Registro:</label>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="input-group">
-                                        <input type="date" id="Fec_Registro" name="Fec_Registro" class="form-control" disabled>
+                                <input type="hidden" name="id_doc_gestion" id="id_doc_gestion">
+                                <div class="row mb-3">
+                                    <div class="col-lg-2 text-end">
+                                        <label class="control-label pt-1">Fecha de Registro:</label>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="input-group">
+                                            <input type="date" id="Fec_Registro" name="Fec_Registro" class="form-control" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 text-end">
+                                        <label class="control-label pt-1" for="IdGestionDocumento">ID del Documento:</label>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="IdGestionDocumento" name="IdGestionDocumento" readonly>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-2 text-end">
-                                    <label class="control-label pt-1" for="IdGestionDocumento">ID del Documento:</label>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="IdGestionDocumento" name="IdGestionDocumento">
-                                    </div>
-                                </div>
-                            </div>
                                 <div class="row mb-3">
                                     <div class="col-lg-2 text-end">
                                         <label class="control-label pt-1">Tipo de Documento:</label>
@@ -89,7 +91,7 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <button type="button" class="btn btn-secondary">Cancelar</button>
+                                    <button type="button" class="btn btn-secondary" id="btn_cancelar" onclick="Limpiar()">Cancelar</button>
                                     <button type="submit" class="btn btn-primary" id="btnGuardar">Guardar</button>
                                 </div>
                             </form>

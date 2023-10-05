@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="es" class="fixed">
 <head>
-
-<?php require_once("../Main/mainhead.php");?>
+	<title>Kondomatik - Lista Documentos</title>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <?php require_once("../Main/mainhead.php"); ?>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 </head>
 <body>
@@ -11,7 +13,7 @@
 	</header>
 
 	<?php 
-			require_once("../Main/mainheadpanel.php"); 
+		require_once("../Main/mainheadpanel.php"); 
 	?>
 
 	<div class="page-container">
@@ -35,12 +37,18 @@
 							<label class="col-lg-9 col-form-label text-end pt-2">Mes:</label>
 							<div class="col-lg-3 text-end">
 								<select class="form-select form-select-sm" data-plugin-multiselect data-plugin-options='{ "maxHeight": 10 }' id="ms_example1">
-									<option value="cheese" selected>Mes 1</option>
-									<option value="tomatoes">Mes 2</option>
-									<option value="mozarella">Mes 3</option>
-									<option value="mushrooms">Mes 4</option>
-									<option value="pepperoni">Mes 5</option>
-									<option value="onions">Mes 6</option>
+									<option value="2">Enero</option>
+									<option value="3">Febrero</option>
+									<option value="4">Marzo</option>
+									<option value="5">Abril</option>
+									<option value="6">Mayo</option>
+									<option value="7">Junio</option>
+									<option value="8">Julio</option>
+									<option value="9">Agosto</option>
+									<option value="10">Septiembre</option>
+									<option value="11">Octubre</option>
+									<option value="12">Noviembre</option>
+									<option value="13">Diciembre</option>
 								</select>
 							</div>
 						</div>
@@ -62,7 +70,7 @@
 						</div>
 
 						<div class="row">
-							<div class="col-lg-8 col-form-label text-end pt-2">
+							<div class="col-lg-8 col-form-label ">
 								<section class="card">
 									<header class="card-header">
 										
@@ -78,9 +86,9 @@
 														<th class="wd-15p">Tipo</th>
 														<th class="wd-15p">Nombre</th>
 														<th class="wd-15p">Estado</th>
-														<th class="wd-15p">Vista</th>
-														<th class="wd-15p">Modificar</th>
-														<th class="wd-15p">Eliminar</th>
+														<th class="wd-5p">Vista</th>
+														<th class="wd-5p">Editar</th>
+														<th class="wd-5p">Eliminar</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -90,32 +98,15 @@
 										</div>
 									</div>
 
-									<!-- <div class="card-body">
-										<table class="table table-responsive-lg table-bordered table-striped table-sm mb-0" id="listardocumento_data">
-											<thead>
-												<tr>
-													<th class="text-center">Fecha</th>
-													<th class="text-center">Tipo</th>
-													<th class="text-center">Nombre</th>
-													<th class="text-center">Estado</th>
-													<th class="text-center">Vista</th>
-													<th class="text-center">Editar</th>
-													<th class="text-center">Eliminar</th>
-												</tr>
-											</thead>
-											<tbody>
-
-											</tbody>
-										</table>
-									</div> -->
+									
 								</section>
+							</div>
+							<div class="col-lg-4">
+								<div id="pdfViewer" style="width: 100%; height: 500px;"></div>
 							</div>
 						</div>
 						<br>
-						<div class="mb-3">
-							<button type="button" class="btn btn-secondary">Cancelar</button>
-							<button type="button" class="btn btn-primary" id='btnGuardar'>Guardar</button>
-                   		 </div>
+						
                 </section>
 			</div>
 		</section>
@@ -123,11 +114,6 @@
 
 		<?php require_once("../Main/mainjs.php"); ?>
 
-		
-		<?php 
-          //require_once("../RegistrarDocumentacion/modaldocumento.php")  
-		  
-   		  ?>
 
 		<script src="listardocumento.js"></script> 
 	</body>
