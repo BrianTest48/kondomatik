@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="fixed">
+
 <head>
     <title>Kondomatik - Registro Docuemntos</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -8,8 +9,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
     <script src="registrardocumento.js"></script>
-    
+
 </head>
+
 <body>
     <section class="body">
         <header class="header">
@@ -75,11 +77,11 @@
                                         <textarea class="form-control form-control-modern" id='Des_Detalle' name="Des_Detalle" rows="6"></textarea>
                                     </div>
                                 </div>
-                                <div class="row mb-3">
+                                <div class="row mb-12">
                                     <div class="col-lg-2 text-end">
                                         <label class="control-label pt-1">Ruta del Documento:</label>
                                     </div>
-                                    <div class="col-lg-9">
+                                    <div class="col-lg-5">
                                         <div class="fileupload fileupload-new" data-provides="fileupload">
                                             <div class="input-append">
                                                 <span class="btn btn-default btn-file">
@@ -88,9 +90,25 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-lg-2 text-end">
+                                        <label class="control-label pt-1">Estado:</label>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="fileupload fileupload-new" data-provides="fileupload">
+                                            <div class="input-append">
+                                                <div id="cbx_estado" class="form-group">
+                                                    <select class="form-control select2" name="Estado" id="Estado" data-placeholder="Seleccione" style="width: 100%" onclick="">
+                                                        <option label="Seleccione"></option>
+                                                        <option value="1">Activo</option>
+                                                        <option value="0">Inactivo</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="mb-3">
+                                <div class="mb-2">
                                     <button type="button" class="btn btn-secondary" id="btn_cancelar" onclick="Limpiar()">Cancelar</button>
                                     <button type="submit" class="btn btn-primary" id="btnGuardar">Guardar</button>
                                 </div>
@@ -103,4 +121,5 @@
     </section>
     <?php require_once("../Main/mainjs.php"); ?>
 </body>
+
 </html>
