@@ -38,7 +38,7 @@
                                             <h3 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Tipos de documentos</h3>
                                         </div>
                                         <div class="col-md-2">
-                                            <button type="button" id="btnnuevotipo" class="btn btn-outline-primary">Nuevo Registro</button>
+                                            <button type="button" id="btnnuevotipo" class="btn btn-outline-primary" style="width: 100%">Nuevo Registro</button>
                                         </div>
                                     </div>
                                 </div>

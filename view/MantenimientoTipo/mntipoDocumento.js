@@ -7,6 +7,7 @@ function init(){
 }
 
 $(document).ready(function(){
+    $('#cbx_estado').hide();
  tabla=$('#documento_data').dataTable({
    "aProcessing": true,
    "aServerSide": true,
@@ -96,6 +97,7 @@ function editar(IdTipDocumentoGestion){
     console.log(IdTipDocumentoGestion);
 
     $('#tipodocutitulo').html('Editar Registro');
+    $('#cbx_estado').show();
 
     $.post("../../controller/TipoDocumentoControlador.php?op=mostrar",{IdTipDocumentoGestion:IdTipDocumentoGestion},function(data){
         data = JSON.parse(data);
@@ -142,7 +144,8 @@ $(document).on("click","#btnnuevotipo", function(){
     $('#IdTipDocumentoGestion').val("");
     $('#tipodocumento_form')[0].reset();
     $('#tipodocumantenimiento').modal('show');
-    
+    $('#cbx_estado').hide();
+
 });
 
 $(document).on("click","#btnclose", function(){

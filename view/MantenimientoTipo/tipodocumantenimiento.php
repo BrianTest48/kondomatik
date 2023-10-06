@@ -13,8 +13,8 @@
                         <input type="text" class="form-control" id="Nom_TipoDocumentoGestion" name="Nom_TipoDocumentoGestion" placeholder="Ingrese Nombre del tipo" required>
                     </div>
 
-                    <div class="form-group">
-                        <label class="form-label" for="Nom_TipoDocumentoGestion">Estado</label>
+                    <div id="cbx_estado" class="form-group">
+                        <label class="form-label" for="">Estado</label>
                         <select class="form-control select2" name="tipo_doc" id="tipo_doc" data-placeholder="Seleccione" style="width: 100%" onclick="" required>
                             <option label="Seleccione"></option>
                             <option value="D.N.I">Activo</option>
