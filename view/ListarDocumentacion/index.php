@@ -106,7 +106,7 @@
 							</div>
 
 							<div class="row">
-								<div class="col-lg-8 col-form-label ">
+								<div class="col-lg-12 col-form-label ">
 									<section class="card">
 										<header class="card-header">
 
@@ -137,9 +137,9 @@
 
 									</section>
 								</div>
-								<div class="col-lg-4">
+								<!-- <div class="col-lg-4">
 									<div id="pdfViewer" style="width: 100%; height: 500px;"></div>
-								</div>
+								</div> -->
 							</div>
 							<br>
 
@@ -148,7 +148,10 @@
 	</section>
 
 
-	<?php require_once("../Main/mainjs.php"); ?>
+	<?php 
+	require_once("../Main/mainjs.php");
+	require_once("modaldocumentacion.php"); 
+	?>
 
 
 	<script src="listardocumento.js"></script>

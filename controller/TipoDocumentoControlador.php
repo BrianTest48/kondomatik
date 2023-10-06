@@ -46,7 +46,7 @@
                     $tipodocumento->insert_tipoDocumento($_POST["Nom_TipoDocumentoGestion"]);
                 }
             }else{
-                $tipodocumento->update_tipoDocumento($_POST["IdTipDocumentoGestion"],$_POST["Nom_TipoDocumentoGestion"]);
+                $tipodocumento->update_tipoDocumento($_POST["IdTipDocumentoGestion"],$_POST["Nom_TipoDocumentoGestion"], $_POST["Estado"]);
             }
             break;
 
@@ -56,6 +56,7 @@
                 foreach($datos as $row){
                     $output["IdTipDocumentoGestion"] = $row["IdTipDocumentoGestion"];
                     $output["Nom_TipoDocumentoGestion"] = $row["Nom_TipoDocumentoGestion"];
+                    $output["Estado"] = $row["Flg_Estado"];
                 }
                 echo json_encode($output);
             }

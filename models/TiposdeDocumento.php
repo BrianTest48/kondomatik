@@ -4,7 +4,7 @@
         public function get_tipodocumento(){
             $conectar= parent::conexion();
             parent::set_names();
-            $sql="SELECT * FROM tbtipodocumentogestion WHERE Flg_Estado=1";
+            $sql="SELECT * FROM tbtipodocumentogestion";
             $sql=$conectar->prepare($sql);
             $sql->execute();
             return $resultado=$sql->fetchAll();
@@ -25,9 +25,8 @@
     public function delete_tipodocumento($IdTipDocumentoGestion){
         $conectar= parent::conexion();
         parent::set_names();
-        $sql="UPDATE tbtipodocumentogestion
-        SET
-              Flg_Estado=0
+        $sql="DELETE FROM tbtipodocumentogestion
+      
         WHERE
               IdTipDocumentoGestion  = ?";
         $sql=$conectar->prepare($sql);
@@ -47,17 +46,19 @@
         return $resultado = $sql->fetchAll();
     }
 
-    public function update_tipodocumento($IdTipDocumentoGestion ,$Nom_TipoDocumentoGestion){
+    public function update_tipodocumento($IdTipDocumentoGestion ,$Nom_TipoDocumentoGestion, $estado){
         $conectar= parent::conexion();
         parent::set_names();
         $sql = "UPDATE tbtipodocumentogestion
         SET
-              Nom_TipoDocumentoGestion=?
+              Nom_TipoDocumentoGestion=?,
+              Flg_Estado =?
         WHERE
               IdTipDocumentoGestion = ?";
         $sql = $conectar->prepare($sql);
         $sql->bindValue(1, $Nom_TipoDocumentoGestion);
-        $sql->bindValue(2, $IdTipDocumentoGestion );
+        $sql->bindValue(2, $estado );
+        $sql->bindValue(3, $IdTipDocumentoGestion );
         $sql->execute();
         return $resultado = $sql->fetchAll();
 

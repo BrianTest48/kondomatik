@@ -100,6 +100,7 @@ function editar(IdTipDocumentoGestion){
         data = JSON.parse(data);
         $('#IdTipDocumentoGestion').val(data.IdTipDocumentoGestion);
         $('#Nom_TipoDocumentoGestion').val(data.Nom_TipoDocumentoGestion);
+        $('#Estado').val(data.Estado).trigger('change');
         console.log(data);
     });
 

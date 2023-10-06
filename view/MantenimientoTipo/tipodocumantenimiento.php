@@ -15,10 +15,10 @@
 
                     <div id="cbx_estado" class="form-group">
                         <label class="form-label" for="">Estado</label>
-                        <select class="form-control select2" name="tipo_doc" id="tipo_doc" data-placeholder="Seleccione" style="width: 100%" onclick="" required>
+                        <select class="form-control select2" name="Estado" id="Estado" data-placeholder="Seleccione" style="width: 100%" onclick="" >
                             <option label="Seleccione"></option>
-                            <option value="D.N.I">Activo</option>
-                            <option value="C.E">Inactivo</option>
+                            <option value="1">Activo</option>
+                            <option value="0">Inactivo</option>
                         </select>
                     </div>
 

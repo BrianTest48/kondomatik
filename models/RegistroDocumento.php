@@ -7,7 +7,7 @@
         $sql = "SELECT tgd.*, tdoc.Nom_TipoDocumentoGestion as nombretipo FROM tmgestiondocumentos tgd
                 INNER JOIN tbtipodocumentogestion tdoc
                 ON tdoc.IdTipDocumentoGestion = tgd.IdTipDocumentoGestion
-                WHERE tgd.Flg_Estado=1;";
+                ";
         $sql = $conectar->prepare($sql);
         $sql->execute();
         return $resultado = $sql->fetchAll();

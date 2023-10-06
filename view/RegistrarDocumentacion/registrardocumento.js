@@ -60,6 +60,8 @@ $(document).ready(function () {
     
     var id = getParameterByName('id');
     if(id == ""){
+        //nuev registro
+
         let fecha_act = moment().tz('America/Lima').format("YYYY-MM-DD");
         console.log(fecha_act);
 
@@ -83,6 +85,8 @@ $(document).ready(function () {
             }
         });
     }else {
+        //editar registro
+        
         $.ajax({
             type: 'POST',
             url: '../../controller/RegistroDocuControlador.php?op=mostrar',
