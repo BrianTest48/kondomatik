@@ -63,8 +63,6 @@ $(document).ready(function(){
 function guardaryeditar(e){
    
     e.preventDefault();
-
-
     var formData = new FormData($("#tipodocumento_form")[0]);
 
     $.ajax({
@@ -95,7 +93,6 @@ function guardaryeditar(e){
 function editar(IdTipDocumentoGestion){
 
     console.log(IdTipDocumentoGestion);
-
     $('#tipodocutitulo').html('Editar Registro');
     $('#cbx_estado').show();
 
@@ -144,7 +141,10 @@ $(document).on("click","#btnnuevotipo", function(){
     $('#IdTipDocumentoGestion').val("");
     $('#tipodocumento_form')[0].reset();
     $('#tipodocumantenimiento').modal('show');
+<<<<<<< HEAD
     $('#cbx_estado').hide();
+=======
+>>>>>>> 0770f516aa2939d16da8c5b83c2738a57d5eb330
 
 });
 
