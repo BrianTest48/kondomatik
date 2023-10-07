@@ -90,7 +90,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 text-end">
+                                    <div id="cbx_estado" class="col-lg-2 text-end">
                                         <label class="control-label pt-1">Estado:</label>
                                     </div>
                                     <div class="col-lg-3">
