@@ -26,8 +26,7 @@
     public function delete_documento($IdGestionDocumento){
         $conectar= parent::conexion();
         parent::set_names();
-        $sql="UPDATE tmgestiondocumentos
-        SET Flg_Estado=0
+        $sql="DELETE FROM tmgestiondocumentos
         WHERE IdGestionDocumento = ?";
         $sql=$conectar->prepare($sql);
         $sql->bindValue(1, $IdGestionDocumento);
@@ -55,7 +54,7 @@
     }
     
 
-    public function update_documento($IdGestionDocumento,$IdTipDocumentoGestion,$Des_Detalle,$Des_NombreDocumento){
+    public function update_documento($IdGestionDocumento,$IdTipDocumentoGestion,$Des_Detalle,$Des_NombreDocumento, $estado){
         $conectar= parent::conexion();
         parent::set_names();
         $sql = "UPDATE tmgestiondocumentos
@@ -63,6 +62,7 @@
             IdTipDocumentoGestion=?,
             Des_Detalle=?,
             Des_NombreDocumento=?
+            Flg_Estado =?
         WHERE
             IdGestionDocumento = ?";
         $sql = $conectar->prepare($sql);
@@ -70,6 +70,7 @@
         $sql->bindValue(2, $Des_Detalle);
         $sql->bindValue(3, $Des_NombreDocumento);
         $sql->bindValue(4, $IdGestionDocumento);
+        $sql->bindValue(5, $estado );
         $sql->execute();
         return $resultado = $sql->fetchAll();
 
