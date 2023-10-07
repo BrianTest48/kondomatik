@@ -61,7 +61,7 @@
         SET
             IdTipDocumentoGestion=?,
             Des_Detalle=?,
-            Des_NombreDocumento=?
+            Des_NombreDocumento=?,
             Flg_Estado =?
         WHERE
             IdGestionDocumento = ?";
@@ -69,14 +69,15 @@
         $sql->bindValue(1, $IdTipDocumentoGestion);
         $sql->bindValue(2, $Des_Detalle);
         $sql->bindValue(3, $Des_NombreDocumento);
-        $sql->bindValue(4, $IdGestionDocumento);
-        $sql->bindValue(5, $estado );
+        $sql->bindValue(4, $estado );
+        $sql->bindValue(5, $IdGestionDocumento);
+        
         $sql->execute();
         return $resultado = $sql->fetchAll();
 
     }
 
-    public function update_documento_file($IdGestionDocumento,$IdTipDocumentoGestion,$Des_Detalle,$Des_NombreDocumento, $Des_ruta){
+    public function update_documento_file($IdGestionDocumento,$IdTipDocumentoGestion,$Des_Detalle,$Des_NombreDocumento, $Des_ruta, $estado){
         $conectar= parent::conexion();
         parent::set_names();
         $sql = "UPDATE tmgestiondocumentos
@@ -84,7 +85,8 @@
             IdTipDocumentoGestion=?,
             Des_Detalle=?,
             Des_NombreDocumento=?,
-            Des_RutaDocumento=?
+            Des_RutaDocumento=?,
+            Flg_Estado =?
         WHERE
             IdGestionDocumento = ?";
         $sql = $conectar->prepare($sql);
@@ -92,7 +94,8 @@
         $sql->bindValue(2, $Des_Detalle);
         $sql->bindValue(3, $Des_NombreDocumento);
         $sql->bindValue(4, $Des_ruta);
-        $sql->bindValue(5, $IdGestionDocumento);
+        $sql->bindValue(5, $estado);
+        $sql->bindValue(6, $IdGestionDocumento);
         $sql->execute();
         return $resultado = $sql->fetchAll();
 

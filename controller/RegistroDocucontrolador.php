@@ -69,7 +69,7 @@ switch ($_GET["op"]) {
         }
         else {
             if($_FILES['Des_RutaDocumento']['name'] != ""){
-                $documento->update_documento_file($_POST["id_doc_gestion"],$_POST["IdTipDocumentoGestion"],$_POST["Des_Detalle"],$_POST["Des_NombreDocumento"], $_FILES['Des_RutaDocumento']['name']);
+                $documento->update_documento_file($_POST["id_doc_gestion"],$_POST["IdTipDocumentoGestion"],$_POST["Des_Detalle"],$_POST["Des_NombreDocumento"], $_FILES['Des_RutaDocumento']['name'],$_POST["Estado"]);
                 
                 $ruta = "../Docs/".$_POST["IdGestionDocumento"]."/";
                 //$files_array = array();
@@ -81,7 +81,7 @@ switch ($_GET["op"]) {
                 
                 move_uploaded_file($nombre, $destino);
             }else {
-                $documento->update_documento($_POST["id_doc_gestion"],$_POST["IdTipDocumentoGestion"],$_POST["Des_Detalle"],$_POST["Des_NombreDocumento"]);
+                $documento->update_documento($_POST["id_doc_gestion"],$_POST["IdTipDocumentoGestion"],$_POST["Des_Detalle"],$_POST["Des_NombreDocumento"],$_POST["Estado"]);
             }
             echo "1";
         }

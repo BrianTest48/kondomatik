@@ -25,7 +25,7 @@ function guardaryeditar(e) {
         contentType: false,
         processData: false,
         success: function (datos) {
-            //console.log('Llamada AJAX exitosa:', datos);
+            console.log('Llamada AJAX exitosa:', datos);
             $('#document_form')[0].reset();
             // Mostrar un mensaje de éxito, si es necesario
             swal.fire(
@@ -53,15 +53,15 @@ $(document).ready(function () {
         guardaryeditar(e);
     });
 
-    $.post("../../controller/TipoDocumentoControlador.php?op=combo", function (data){
+    $.post("../../controller/TipoDocumentoControlador.php?op=combo", function (data) {
         $("#IdTipDocumentoGestion").html(data);
     });
 
-    
-    var id = getParameterByName('id');
-    if(id == ""){
-        //nuev registro
 
+    var id = getParameterByName('id');
+    if (id == "") {
+        //nuev registro
+        $('.cbx_estado').hide();
         let fecha_act = moment().tz('America/Lima').format("YYYY-MM-DD");
         console.log(fecha_act);
 
@@ -71,36 +71,37 @@ $(document).ready(function () {
             type: 'POST',
             url: '../../controller/RegistroDocuControlador.php?op=mostrar_ultimo',
             dataType: 'JSON',
-            success: function(data){
-            //console.log(data);
-            var cod = data.id_generator;
-            var numero = parseInt(cod.substring(2));
-            numero++;
-            var nuevoNumero = ("000000" + numero).slice(-6);
+            success: function (data) {
+                //console.log(data);
+                var cod = data.id_generator;
+                var numero = parseInt(cod.substring(2));
+                numero++;
+                var nuevoNumero = ("000000" + numero).slice(-6);
 
-            $('#IdGestionDocumento').val("GD" + nuevoNumero);
+                $('#IdGestionDocumento').val("GD" + nuevoNumero);
             },
             error: function (error) {
                 console.log(error);
             }
         });
-    }else {
+    } else {
         //editar registro
-        
+        $('.cbx_estado').show();
         $.ajax({
             type: 'POST',
             url: '../../controller/RegistroDocuControlador.php?op=mostrar',
-            data : {IdGestionDocumento : id},
+            data: { IdGestionDocumento: id },
             dataType: 'JSON',
-            success: function(data){
+            success: function (data) {
                 console.log(data);
                 let fecha = moment(data.Fec_Registro).format("YYYY-MM-DD");
-                $('#id_doc_gestion').val(data.IdGestionDocumento); 
+                $('#id_doc_gestion').val(data.IdGestionDocumento);
                 $('#Fec_Registro').val(fecha);
                 $('#IdGestionDocumento').val(data.id_generator);
                 $('#IdTipDocumentoGestion').val(data.IdTipDocumentoGestion).trigger('change');
                 $('#Des_NombreDocumento').val(data.Des_NombreDocumento);
-                $('#Des_Detalle').val(data.Des_Detalle); 
+                $('#Des_Detalle').val(data.Des_Detalle);
+                $('#Estado').val(data.Flg_Estado).trigger('change');
             },
             error: function (error) {
                 console.log(error);
@@ -109,13 +110,13 @@ $(document).ready(function () {
     }
 
 
-    
+
 });
 
 function getParameterByName(name) {
     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-    results = regex.exec(location.search);
+        results = regex.exec(location.search);
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
@@ -134,7 +135,7 @@ function editar(IdGestionDocumento) {
         $('#Flg_Estado').val(data.Flg_Estado);
     });*/
 
-   
+
 }
 
 function eliminar(IdGestionDocumento) {
@@ -149,7 +150,7 @@ function eliminar(IdGestionDocumento) {
 
     }).then((result) => {
         if (result.isConfirmed) {
-            $.post("../../controller/RegistroDocuControlador.php?op=eliminar", {IdGestionDocumento:IdGestionDocumento}, function (data) {
+            $.post("../../controller/RegistroDocuControlador.php?op=eliminar", { IdGestionDocumento: IdGestionDocumento }, function (data) {
                 $('#documento_data').DataTable().ajax.reload();
             });
 
@@ -163,7 +164,7 @@ $(document).on("click", "#btnGuardar", function () {
 
 });
 
-function Limpiar(){
+function Limpiar() {
     window.open("../ListarDocumentacion/index.php", "_self");
 }
 

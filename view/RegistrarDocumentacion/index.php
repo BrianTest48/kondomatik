@@ -90,13 +90,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="cbx_estado" class="col-lg-2 text-end">
+
+                                    <div class="col-lg-2 text-end cbx_estado">
                                         <label class="control-label pt-1">Estado:</label>
                                     </div>
-                                    <div class="col-lg-3">
+                                    <div class="col-lg-3 cbx_estado">
                                         <div class="fileupload fileupload-new" data-provides="fileupload">
                                             <div class="input-append">
-                                                <div id="cbx_estado" class="form-group">
+                                                <div class="form-group">
                                                     <select class="form-control select2" name="Estado" id="Estado" data-placeholder="Seleccione" style="width: 100%" onclick="">
                                                         <option label="Seleccione"></option>
                                                         <option value="1">Activo</option>
