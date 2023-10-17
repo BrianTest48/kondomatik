@@ -74,17 +74,17 @@ function vista(valor) {
         data: { IdGestionDocumento: valor },
         dataType: 'JSON',
         success: function (data) {
-                        console.log(data);
-                        var pdfDiv = document.getElementById("pdfViewer");
-                        //var pdfUrl = "http://localhost/kondomatik/Docs/GD004/Print%20de%20Modulos%20Kondomatik.pdf"; 
-                        var pdfUrl = "../../Docs/"+data.id_generator+"/"+ data.Des_RutaDocumento; 
-            console.log(pdfUrl);
-                        var embed = document.createElement("embed");
-                        embed.src = pdfUrl;
-                        embed.width = "100%";
-                        embed.height = "100%";
-                        pdfDiv.innerHTML = "";
-                        pdfDiv.appendChild(embed);
+                console.log(data);
+                var pdfDiv = document.getElementById("pdfViewer");
+                //var pdfUrl = "http://localhost/kondomatik/Docs/GD004/Print%20de%20Modulos%20Kondomatik.pdf"; 
+                var pdfUrl = "../../Docs/"+data.id_generator+"/"+ data.Des_RutaDocumento; 
+                console.log(pdfUrl);
+                var embed = document.createElement("embed");
+                embed.src = pdfUrl;
+                embed.width = "100%";
+                embed.height = "100%";
+                pdfDiv.innerHTML = "";
+                pdfDiv.appendChild(embed);
 
             // var pdfUrl = "../../Docs/"+data.id_generator+"/"+ data.Des_RutaDocumento; 
 
@@ -132,4 +132,6 @@ function eliminar(valor) {
     }
     )
 }
+
+
 
