@@ -66,3 +66,4 @@
 
  <!-- Select2 JS -->
 <script src="../../public/lib/select2/js/select2.full.min.js"></script>
+

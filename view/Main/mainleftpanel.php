@@ -163,12 +163,12 @@
 							</a>
 							<ul class="nav nav-children">
 								<li>
-									<a class="nav-link" href="ui-elements-typography.html">
+								<a class="nav-link" href="../RegistrarMantenimiento/index.php">
 										Registrar Mantenimiento Programado - Alerta
 									</a>
 								</li>
 								<li>
-									<a class="nav-link" href="ui-elements-tabs.html">
+								<a class="nav-link" href="../ListarMantenimiento/index.php">									
 										Lista de Mantenimientos Programados - Realizados / Vencidos
 									</a>
 								</li>
