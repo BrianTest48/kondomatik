@@ -39,10 +39,10 @@
                                                 <a class="nav-link active" aria-current="page" href="../Gestionpropietario/familiares.php">Familiares</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="#">Posesiones</a>
+                                                <a class="nav-link active" aria-current="page" href="../Gestionpropietario/posesiones.php">Posesiones</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="#">Cierre</a>
+                                                <a class="nav-link active" aria-current="page" href="../Gestionpropietario/cierre.php">Cierre</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -230,7 +230,6 @@
                                         </div>
 
                                     </div>
-                                    <br>
 
                                 </div><!-- br-pagebody -->
                             </div>
