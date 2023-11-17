@@ -29,15 +29,18 @@
 							</a>
 							<ul class="nav nav-children">
 								<li>
-									<a class="nav-link" href="">
-										Enviar Dpto Usuario - Contraseña
+									<a class="nav-link" href="../Gestionpropietario/propietario.php">
+										Registro de Propietario
+										<!-- Enviar Dpto Usuario - Contraseña -->
 									</a>
 								</li>
 								<li>
 									<a class="nav-link" href="">
-										Registrar Propietario - Familiar - Inquilino
+										Registro de Inquilino
+										<!-- Registrar Propietario - Familiar - Inquilino -->
 									</a>
 								</li>
+								
 
 							</ul>
 						</li>
