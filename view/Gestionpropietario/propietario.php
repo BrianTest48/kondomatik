@@ -201,7 +201,6 @@
                                         </h6>
                                         <div class="col-lg-12 col-form-label ">
                                             <section class="card">
-
                                                 <div class="card-body">
                                                     <div class="table-wrapper">
                                                         <table id="" class="display min-w850" style="width: 100%">
@@ -221,8 +220,6 @@
                                                         </table>
                                                     </div>
                                                 </div>
-
-
                                             </section>
                                         </div>
                                         <br><br><br>
