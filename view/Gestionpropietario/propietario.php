@@ -196,6 +196,35 @@
                                                 Agregar Otro Propietario
                                             </button>
                                         </div>
+                                        <br>
+                                        <h6 class="bg-primary p-2  col-sm-12 text-white rounded"> LISTA DE PROPIETARIOS
+                                        </h6>
+                                        <div class="col-lg-12 col-form-label ">
+                                            <section class="card">
+
+                                                <div class="card-body">
+                                                    <div class="table-wrapper">
+                                                        <table id="" class="display min-w850" style="width: 100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="wd-15p">N°</th>
+                                                                    <th class="wd-15p">Tipo Propietario</th>
+                                                                    <th class="wd-15p">DNI</th>
+                                                                    <th class="wd-15p">Nombres y Apellidos</th>
+                                                                    <th class="wd-5p">Editar</th>
+                                                                    <th class="wd-5p">Eliminar</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+
+                                            </section>
+                                        </div>
                                         <br><br><br>
                                         <div class=" text-center">
                                             <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
