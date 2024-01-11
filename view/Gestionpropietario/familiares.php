@@ -53,7 +53,7 @@
                                     <!--Incia el card --->
 
                                     <div class="border border-secondary  p-2 rounded-2 col-12">
-                                        <!-- ======= FORMULARIO DATOS DEL PACIENTE ======= -->
+                                        <!-- ======= FORMULARIO DATOS ======= -->
 
                                         <div class="form-group row m-t-15">
                                             <label for="" class="col-sm-2 col-form-label">Fecha de Registro</label>
