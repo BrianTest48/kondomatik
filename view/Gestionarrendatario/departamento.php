@@ -42,7 +42,7 @@
                                                 <a class="nav-link active" aria-current="page" href="../Gestionarrendatario/familiares.php">Familiares</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="">Cochera/Deposito</a>
+                                                <a class="nav-link active" aria-current="page" href="../Gestionarrendatario/cochera.php">Cochera/Deposito</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link active" aria-current="page" href="">Cierre</a>
