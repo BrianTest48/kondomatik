@@ -69,7 +69,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="form-group row">
-                                                            <label for="" class="col-sm-4 col-form-label">ID Propietario: </label>
+                                                            <label for="" class="col-sm-4 col-form-label">Parentesco: </label>
                                                             <div class="col-sm-8">
                                                                 <input type="text" class="form-control" id="" placeholder="">
                                                             </div>
@@ -105,110 +105,96 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div><!-- row -->
-                                        </div>
-                                        <br>
-
-                                        <form action="">
-                                            <div class="accordion" id="accordionExample">
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="headingOne">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                            ¿Elegiste RUC? ¡Registra los datos de la empresa!
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body">
-                                                            <div id="orcinea" class="">
-                                                                <div class="card pd-t-20">
-                                                                    <!--Incia el card --->
-                                                                    <div class="card-body">
-                                                                        <div class="border border-secondary  p-2 rounded-2">
-                                                                            <!-- ======= FORMULARIO DATOS DEL PACIENTE ======= -->
-                                                                            <div id="pacientes" autocomplete="off">
-                                                                                <input type="hidden" id="id" name="id">
-                                                                                <h6 class="bg-primary p-2  col-sm-12 text-white rounded ">DATOS DE LA EMPRESA
-                                                                                </h6>
-
-                                                                                <div class="form-group row">
-                                                                                    <label for="" class="col-sm-2 col-form-label">Razón Social</label>
-                                                                                    <div class="col-sm-10">
-                                                                                        <input type="text" class="form-control" id="" placeholder="">
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="form-group row">
-                                                                                    <label for="" class="col-sm-2 col-form-label">Cargo del Propietario</label>
-                                                                                    <div class="col-sm-10">
-                                                                                        <input type="text" class="form-control" id="" placeholder="">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <br>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="form-group row">
+                                                        <label for="" class="col-sm-2 col-form-label">Nombres:</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="" class="col-sm-2 col-form-label">Apellido Paterno:</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="" class="col-sm-2 col-form-label">Apellido Materno:</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="" class="col-sm-2 col-form-label">Email:</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="email" class="form-control" id="" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="" class="col-sm-2 col-form-label">Fecha de Naciemiento:</label>
+                                                        <div class="col-sm-4">
+                                                            <input type="date" class="form-control" id="" placeholder="">
+                                                        </div>
+                                                        <label for="" class="col-sm-2 col-form-label">Nro de Familiares:</label>
+                                                        <div class="col-sm-4">
+                                                            <input type="number" class="form-control" id="" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="" class="col-sm-2 col-form-label">Teléfono Fijo:</label>
+                                                        <div class="col-sm-4">
+                                                            <input type="number" class="form-control" id="" placeholder="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label for="" class="col-sm-2 col-form-label">Celular:</label>
+                                                        <div class="col-sm-4">
+                                                            <input type="number" class="form-control" id="" placeholder="">
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </form>
-
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Nombres:</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Apellido Paterno:</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Apellido Materno:</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Email:</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Fecha de Naciemiento:</label>
-                                            <div class="col-sm-4">
-                                                <input type="date" class="form-control" id="" placeholder="">
-                                            </div>
-                                            <label for="" class="col-sm-2 col-form-label">Nro de Familiares:</label>
-                                            <div class="col-sm-4">
-                                                <input type="number" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Teléfono Fijo:</label>
-                                            <div class="col-sm-4">
-                                                <input type="number" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Celular:</label>
-                                            <div class="col-sm-4">
-                                                <input type="number" class="form-control" id="" placeholder="">
-                                            </div>
+                                            </div><!-- row -->
                                         </div>
                                         <br>
                                         <div class=" text-center">
+                                            <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
+                                                Agregar Otro Familiar
+                                            </button>
+                                        </div>
+                                        <br>
+                                        <h6 class="bg-primary p-2  col-sm-12 text-white rounded"> LISTA DE FAMILIARES
+                                        </h6>
+                                        <div class="col-lg-12 col-form-label ">
+                                            <section class="card">
+                                                <div class="card-body">
+                                                    <div class="table-wrapper">
+                                                        <table id="" class="display min-w850" style="width: 100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="wd-15p">N°</th>
+                                                                    <th class="wd-15p">Parentesco</th>
+                                                                    <th class="wd-15p">DNI</th>
+                                                                    <th class="wd-15p">Nombres y Apellidos</th>
+                                                                    <th class="wd-5p">Editar</th>
+                                                                    <th class="wd-5p">Eliminar</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <br><br><br>
+                                        <div class=" text-center">
                                             <button type="submit" name="submit" class="btn btn-raised btn-primary">
                                                 SIGUIENTE
-                                                <i class="fas fa-long-arrow-alt-right"></i></button>
+                                            </button>
                                         </div>
 
                                     </div>
-
                                 </div><!-- br-pagebody -->
                             </div>
                         </div>
