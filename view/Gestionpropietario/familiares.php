@@ -188,6 +188,7 @@
                                 </div><!-- br-pagebody -->
                             </div>
                         </div>
+                    </div>
                 </section>
             </div>
         </div>

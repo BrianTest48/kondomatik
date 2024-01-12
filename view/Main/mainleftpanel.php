@@ -35,7 +35,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="nav-link" href="">
+									<a class="nav-link" href="../Gestionarrendatario/departamento.php">
 										Registro de Inquilino
 										<!-- Registrar Propietario - Familiar - Inquilino -->
 									</a>
