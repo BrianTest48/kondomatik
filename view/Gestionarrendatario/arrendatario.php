@@ -105,7 +105,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div><!-- row -->
+                                            </div>
                                         </div>
                                         <br>
 

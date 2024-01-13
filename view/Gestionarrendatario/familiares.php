@@ -181,6 +181,7 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
+
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -189,6 +190,9 @@
                                         </div>
                                         <br><br><br>
                                         <div class=" text-center">
+                                            <button type="submit" name="submit" class="btn btn-raised btn-primary">
+                                                ATRAS
+                                            </button>
                                             <button type="submit" name="submit" class="btn btn-raised btn-primary">
                                                 SIGUIENTE
                                             </button>

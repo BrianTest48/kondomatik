@@ -59,156 +59,188 @@
                                         <!-- ======= FORMULARIO DATOS ======= -->
 
                                         <div class="br-pagebody">
-                                            <div class="br-section-wrapper">
-                                                <div class="row">
-                                                    <div class="col-xl-6">
-                                                        <div class="form-group row">
-                                                            <label for="" class="col-sm-4 col-form-label">Fecha de Registro: </label>
-                                                            <div class="col-sm-8">
-                                                                <input type="date" class="form-control" id="" placeholder="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label for="" class="col-sm-4 col-form-label">ID Propietario: </label>
-                                                            <div class="col-sm-8">
-                                                                <input type="text" class="form-control" id="" placeholder="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label for="" class="col-sm-4 col-form-label">Tipo de Documento</label>
-                                                            <div class="col-sm-8">
-                                                                <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" required>
-                                                                    <option label="Seleccione"></option>
-                                                                    <option value="#">DNI</option>
-                                                                    <option value="#">Carnet de Extranjería</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <label for="" class="col-sm-4 col-form-label">Nro Documento: </label>
-                                                            <div class="col-sm-8">
-                                                                <input type="number" class="form-control" id="" placeholder="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-3">
-                                                        <div class="text-center">
-                                                            <img src="../../assets/subir.png" class="rounded" alt="...">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-3">
-                                                        <div class="form-group row">
-                                                            <label for="" class="col-sm-12 col-form-label">Sube una foto </label>
-                                                            <div class="col-sm-12">
-                                                                <input type="file">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div><!-- row -->
-                                        </div>
-                                        <br>
+                                            <form action="">
+                                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                                                ¿Alquilas una cochera? ¡Registralo!
+                                                            </button>
+                                                        </h2>
+                                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                                            <div class="accordion-body">
+                                                                <div id="" autocomplete="off">
+                                                                    <input type="hidden" id="id" name="id">
+                                                                    <h6 class="bg-primary p-2  col-sm-12 text-white rounded ">DATOS DE ALQUILER DE COCHERA
+                                                                    </h6>
+                                                                    <div class="form-group row">
+                                                                        <label for="" class="col-sm-2 col-form-label"></label>
+                                                                        <div class="col-sm-4">
 
-                                        <form action="">
-                                            <div class="accordion" id="accordionExample">
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="headingOne">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                            ¿Elegiste RUC? ¡Registra los datos de la empresa!
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body">
-                                                            <div id="orcinea" class="">
-                                                                <div class="card pd-t-20">
-                                                                    <!--Incia el card --->
-                                                                    <div class="card-body">
-                                                                        <div class="border border-secondary  p-2 rounded-2">
-                                                                            <!-- ======= FORMULARIO DATOS DEL PACIENTE ======= -->
-                                                                            <div id="pacientes" autocomplete="off">
-                                                                                <input type="hidden" id="id" name="id">
-                                                                                <h6 class="bg-primary p-2  col-sm-12 text-white rounded ">DATOS DE LA EMPRESA
-                                                                                </h6>
+                                                                        </div>
+                                                                        <label for="" class="col-sm-2 col-form-label">Nro de Cochera</label>
+                                                                        <div class="col-sm-4">
+                                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="" class="col-sm-2 col-form-label">Torre/Bloque/Seccion</label>
+                                                                        <div class="col-sm-4">
+                                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                                        </div>
+                                                                        <label for="" class="col-sm-2 col-form-label">Nro Departamento</label>
+                                                                        <div class="col-sm-4">
+                                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="" class="col-sm-2 col-form-label">Propietario</label>
+                                                                        <div class="col-sm-10">
+                                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                                        <button type="submit" name="submit" class="btn btn-raised btn-primary">
+                                                                            Agregar Otra Cochera
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                                        ¡No olvides registrar tu vehículo!
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                                                    <div class="accordion-body">
+                                                                        <div id="" autocomplete="off">
+                                                                            <input type="hidden" id="id" name="id">
+                                                                            <h6 class="bg-primary p-2  col-sm-12 text-white rounded ">DATOS DE ALQUILER DE DEPOSITO
+                                                                            </h6>
 
-                                                                                <div class="form-group row">
-                                                                                    <label for="" class="col-sm-2 col-form-label">Razón Social</label>
-                                                                                    <div class="col-sm-10">
-                                                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                                            <div class="br-section-wrapper">
+                                                                                <div class="row">
+                                                                                    <div class="col-xl-6">
+                                                                                        <div class="form-group row">
+                                                                                            <label for="" class="col-sm-4 col-form-label">Tipo de Auto: </label>
+                                                                                            <div class="col-sm-8">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" required>
+                                                                                                        <option label="Seleccione"></option>
+                                                                                                        <option value="#">.</option>
+                                                                                                        <option value="#">.</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="" class="col-sm-4 col-form-label">Marca de Vehículo: </label>
+                                                                                            <div class="col-sm-8">
+                                                                                                <div class="col-sm-12">
+                                                                                                    <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" required>
+                                                                                                        <option label="Seleccione"></option>
+                                                                                                        <option value="#">.</option>
+                                                                                                        <option value="#">.</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="" class="col-sm-4 col-form-label">Nro de Placa: </label>
+                                                                                            <div class="col-sm-8">
+                                                                                                <input type="text" class="form-control" id="" placeholder="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="" class="col-sm-4 col-form-label">Color de Vehículo: </label>
+                                                                                            <div class="col-sm-8">
+                                                                                                <input type="text" class="form-control" id="" placeholder="">
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
-                                                                                </div>
-                                                                                <div class="form-group row">
-                                                                                    <label for="" class="col-sm-2 col-form-label">Cargo del Propietario</label>
-                                                                                    <div class="col-sm-10">
-                                                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                                                    <div class="col-xl-3">
+                                                                                        <div class="text-center">
+                                                                                            <img src="../../assets/subir.png" class="rounded" alt="...">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-xl-3">
+                                                                                        <div class="form-group row">
+                                                                                            <label for="" class="col-sm-12 col-form-label">Sube una foto </label>
+                                                                                            <div class="col-sm-12">
+                                                                                                <input type="file">
+                                                                                            </div>
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                             <br>
+                                                                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                                                <button type="submit" name="submit" class="btn btn-raised btn-primary">
+                                                                                    Agregar otra Vehículo
+                                                                                </button>
+                                                                            </div>
                                                                         </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                                ¿Alquilas un Deposito? ¡Registralo!
+                                                            </button>
+                                                        </h2>
+                                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                                            <div class="accordion-body">
+                                                                <div id="" autocomplete="off">
+                                                                    <input type="hidden" id="id" name="id">
+                                                                    <h6 class="bg-primary p-2  col-sm-12 text-white rounded ">DATOS DE ALQUILER DE DEPOSITO
+                                                                    </h6>
+
+                                                                    <div class="form-group row">
+                                                                        <label for="" class="col-sm-2 col-form-label"></label>
+                                                                        <div class="col-sm-4">
+
+                                                                        </div>
+                                                                        <label for="" class="col-sm-2 col-form-label">Nro de Depósito</label>
+                                                                        <div class="col-sm-4">
+                                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="" class="col-sm-2 col-form-label">Torre/Bloque/Seccion</label>
+                                                                        <div class="col-sm-4">
+                                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                                        </div>
+                                                                        <label for="" class="col-sm-2 col-form-label">Nro Departamento</label>
+                                                                        <div class="col-sm-4">
+                                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="" class="col-sm-2 col-form-label">Propietario</label>
+                                                                        <div class="col-sm-10">
+                                                                            <input type="text" class="form-control" id="" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>
+                                                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                                        <button type="submit" name="submit" class="btn btn-raised btn-primary">
+                                                                            Agregar otro Depósito
+                                                                        </button>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </form>
-
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Nombres:</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
+                                            </form>
                                         </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Apellido Paterno:</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Apellido Materno:</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Email:</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Fecha de Naciemiento:</label>
-                                            <div class="col-sm-4">
-                                                <input type="date" class="form-control" id="" placeholder="">
-                                            </div>
-                                            <label for="" class="col-sm-2 col-form-label">Nro de Familiares:</label>
-                                            <div class="col-sm-4">
-                                                <input type="number" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Teléfono Fijo:</label>
-                                            <div class="col-sm-4">
-                                                <input type="number" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Celular:</label>
-                                            <div class="col-sm-4">
-                                                <input type="number" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class=" text-center">
-                                            <button type="submit" name="submit" class="btn btn-raised btn-primary">
-                                                SIGUIENTE
-                                                <i class="fas fa-long-arrow-alt-right"></i></button>
-                                        </div>
-
                                     </div>
-
                                 </div><!-- br-pagebody -->
                             </div>
                         </div>
