@@ -45,7 +45,7 @@
                                                 <a class="nav-link active" aria-current="page" href="../Gestionarrendatario/cochera.php">Cochera/Deposito</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="">Cierre</a>
+                                                <a class="nav-link active" aria-current="page" href="../Gestionarrendatario/cierre.php">Cierre</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -240,7 +240,17 @@
                                                 </div>
                                             </form>
                                         </div>
+                                        <br>
+                                        <div class=" text-center">
+                                            <button type="submit" name="submit" class="btn btn-raised btn-primary"></i>
+                                                ATRAS
+                                            </button>
+                                            <button type="submit" name="submit" class="btn btn-raised btn-primary">
+                                                SIGUIENTE
+                                            </button>
+                                        </div>
                                     </div>
+
                                 </div><!-- br-pagebody -->
                             </div>
                         </div>

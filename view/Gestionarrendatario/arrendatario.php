@@ -45,7 +45,7 @@
                                                 <a class="nav-link active" aria-current="page" href="../Gestionarrendatario/cochera.php">Cochera/Deposito</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="">Cierre</a>
+                                                <a class="nav-link active" aria-current="page" href="../Gestionarrendatario/cierre.php">Cierre</a>
                                             </li>
                                         </ul>
                                     </div>
