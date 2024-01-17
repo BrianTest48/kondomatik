@@ -55,7 +55,7 @@
                                     <div class="border border-secondary  p-2 rounded-2 col-12">
                                         <!-- ======= FORMULARIO DATOS ======= -->
 
-                                        <div class="form-group row m-t-15">
+                                        <div class="form-group row m-t-12">
                                             <label for="" class="col-sm-2 col-form-label">N° de Cochera</label>
                                             <div class="col-sm-4">
                                                 <input type="text" class="form-control" id="" placeholder="">

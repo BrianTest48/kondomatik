@@ -55,9 +55,19 @@
                                                     <div class="col-xl-6">
                                                         <div class="form-group row">
                                                             <label for="" class="col-sm-12 col-form-label">Vista de Solicitud </label>
-                                                            <!-- <div class="col-sm-12">
-                                                                <input type="file">
-                                                            </div> -->
+                                                            <div class="prevs_certificado" id="prev1">
+                                                                <div class="container prev_certificado" style="max-width: 1020px !important;" id="prev_certificado_0">
+                                                                    <div class="card" style="margin-top: 60px;">
+                                                                        <div class="card-header d-flex justify-content-between">
+                                                                            <h3>VISTA DE LA SOLICITUD ENVIADA</h3>
+                                                                            <div>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-xl-6">

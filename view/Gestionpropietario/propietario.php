@@ -199,7 +199,7 @@
                                         <br>
                                         <h6 class="bg-primary p-2  col-sm-12 text-white rounded"> LISTA DE PROPIETARIOS
                                         </h6>
-                                        <div class="col-lg-12 col-form-label ">
+                                        <div class="col-lg-12 col-form-label">
                                             <section class="card">
                                                 <div class="card-body">
                                                     <div class="table-wrapper">

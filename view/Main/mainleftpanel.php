@@ -97,6 +97,11 @@
 									</a>
 								</li>
 								<li>
+									<a class="nav-link" href="../Solicitud/proceso.php">
+										Bandeja de Aprobaciones
+									</a>
+								</li>
+								<!-- <li>
 									<a class="nav-link" href="ui-elements-tabs.html">
 										Bandeja de Registros de Solicitudes - Pendientes
 									</a>
@@ -110,7 +115,7 @@
 									<a class="nav-link" href="ui-elements-widgets.html">
 										Bandeja de Registros de Solicitudes - Aprobados / Rechazados
 									</a>
-								</li>
+								</li> -->
 							</ul>
 						</li>
 						<li class="nav-parent">
