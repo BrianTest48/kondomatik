@@ -241,6 +241,83 @@
                                             </form>
                                         </div>
                                         <br>
+                                        <h6 class="bg-primary p-2  col-sm-12 text-white rounded"> LISTA DE POSESIONES
+                                        </h6>
+                                        <br>
+                                        <div class="form-group row">
+                                            <div class="col-lg-6 col-form-label ">
+                                                <h4>Lista de Cocheras</h4>
+                                                <section class="card">
+                                                    <div class="card-body">
+                                                        <div class="table-wrapper">
+                                                            <table id="" class="display min-w850" style="width: 100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="wd-15p">N°</th>
+                                                                        <th class="wd-15p">Nro de Cochera</th>
+                                                                        <th class="wd-5p">Editar</th>
+                                                                        <th class="wd-5p">Eliminar</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+
+                                            <div class="col-lg-6 col-form-label ">
+                                                <h4>Lista de Depósito (s)</h4>
+                                                <section class="card">
+                                                    <div class="card-body">
+                                                        <div class="table-wrapper">
+                                                            <table id="" class="display min-w850" style="width: 100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class="wd-15p">N°</th>
+                                                                        <th class="wd-15p">N° de Depósito</th>
+                                                                        <th class="wd-5p">Editar</th>
+                                                                        <th class="wd-5p">Eliminar</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                        <br><br>
+                                        <div class="col-lg-12 col-form-label ">
+                                            <h4>Lista de Vehículos</h4>
+                                            <section class="card">
+                                                <div class="card-body">
+                                                    <div class="table-wrapper">
+                                                        <table id="" class="display min-w850" style="width: 100%">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="wd-15p">N°</th>
+                                                                    <th class="wd-15p">Tipo</th>
+                                                                    <th class="wd-15p">Marca</th>
+                                                                    <th class="wd-15p">Nro de Placa</th>
+                                                                    <th class="wd-15p">Color</th>
+                                                                    <th class="wd-5p">Editar</th>
+                                                                    <th class="wd-5p">Eliminar</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <br>
                                         <div class=" text-center">
                                             <button type="submit" name="submit" class="btn btn-raised btn-primary"></i>
                                                 ATRAS
