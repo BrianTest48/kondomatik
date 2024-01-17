@@ -178,6 +178,17 @@
                                                             </div>
                                                         </div>
                                                         <br>
+                                                        <div class="form-group row">
+                                                            <div class="text-center">
+                                                                <img src="../../assets/cuadro.jpg" class="rounded" alt="...">
+                                                            </div>
+                                                        </div>
+                                                        <br>
+                                                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                                            <button class="btn btn-primary me-md-2" type="button">Ver Programación de la Semana</button>
+                                                            <button class="btn btn-primary" type="button">Ver Programación Mensual</button>
+                                                        </div>
+                                                        <br>
                                                         <div class="row">
                                                             <div class="col-md-12 mx-auto">
                                                                 <div class="input-group">
@@ -229,7 +240,7 @@
                                                         <br>
 
                                                         <div class="row">
-                                                            <div class="col-xl-6">
+                                                            <div class="col-xl-9">
                                                                 <div class="col-lg-12 col-form-label">
                                                                     <section class="card">
                                                                         <div class="card-body">
@@ -244,9 +255,6 @@
                                                                                             <th class="wd-5p">Estado</th>
                                                                                         </tr>
                                                                                     </thead>
-                                                                                    <tbody>
-
-                                                                                    </tbody>
                                                                                 </table>
                                                                             </div>
                                                                         </div>
@@ -254,18 +262,28 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-xl-6">
-                                                                <div class="form-group row">
-                                                                    <div class="text-center">
-                                                                        <img src="../../assets/subir.png" class="rounded" alt="...">
+                                                            <div class="col-xl-3">
+                                                                <div class="border border-secondary  p-2 rounded-2 col-12">
+                                                                    <h3>Control</h3>
+                                                                    <div class="form-group row">
+                                                                        <label for="" class="col-sm-12 col-form-label">Inicio </label>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="time" class="form-control" id="" placeholder="En Espera">
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <br>
-                                                                <div class="form-group row">
-                                                                    <label for="" class="col-sm-4 col-form-label">Observaciones: </label>
-                                                                    <div class="col-sm-12">
-                                                                        <textarea type="text" class="form-control" id="" placeholder=""></textarea>
+                                                                    <div class="form-group row">
+                                                                        <label for="" class="col-sm-12 col-form-label">Fin </label>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="time" class="form-control" id="" placeholder="En Espera">
+                                                                        </div>
                                                                     </div>
+                                                                    <div class="form-group row">
+                                                                        <label for="" class="col-sm-12 col-form-label">Exceso </label>
+                                                                        <div class="col-sm-12">
+                                                                            <input type="time" class="form-control" id="" placeholder="En Espera">
+                                                                        </div>
+                                                                    </div>
+
                                                                 </div>
                                                             </div>
                                                         </div>
