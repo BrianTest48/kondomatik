@@ -92,7 +92,7 @@
 							</a>
 							<ul class="nav nav-children">
 								<li>
-									<a class="nav-link" href="ui-elements-typography.html">
+									<a class="nav-link" href="../Solicitud/nuevo.php">
 										Registrar Solicitud - Peticion
 									</a>
 								</li>
