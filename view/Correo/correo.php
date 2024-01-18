@@ -150,6 +150,13 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <br>
+                                            <div class=" text-center">
+                                                <button type="submit" name="submit" class="btn btn-raised btn-primary">
+                                                    CANCELAR</button>
+                                                <button type="submit" name="submit" class="btn btn-raised btn-primary">
+                                                    GRABAR</button>
+                                            </div>
                                         </div>
 
                                     </div>
