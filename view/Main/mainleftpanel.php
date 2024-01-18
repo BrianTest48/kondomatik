@@ -244,6 +244,20 @@
 						<li class="nav-parent">
 							<a class="nav-link" href="#">
 								<i class="bx bx-cube" aria-hidden="true"></i>
+								<span>Correo</span>
+							</a>
+							<ul class="nav nav-children">
+								<li>
+									<a class="nav-link" href="../Correo/correo.php">
+										Bandeja de Entrada
+									</a>
+								</li>
+								
+							</ul>
+						</li>
+						<li class="nav-parent">
+							<a class="nav-link" href="#">
+								<i class="bx bx-cube" aria-hidden="true"></i>
 								<span>Gestion Otros Ingresos</span>
 							</a>
 							<ul class="nav nav-children">
