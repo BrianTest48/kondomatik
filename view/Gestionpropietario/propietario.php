@@ -42,7 +42,7 @@
                                                 <button class="nav-link btn btn-outline-secondary btn-block mg-b-10 " id="refelx-tab" data-bs-toggle="pill" data-bs-target="#posesiones" type="button" role="tab" aria-controls="posesiones" aria-selected="false">Posesiones</button>
                                             </li>
                                             <li class="nav-item" role="presentation">
-                                                <button class="nav-link btn btn-outline-secondary btn-block mg-b-10 " id="refelx-tab" git commitdata-bs-toggle="pill" data-bs-target="#cierre" type="button" role="tab" aria-controls="cierre" aria-selected="false">Cierre</button>
+                                                <button class="nav-link btn btn-outline-secondary btn-block mg-b-10 " id="refelx-tab" data-bs-toggle="pill" data-bs-target="#cierre" type="button" role="tab" aria-controls="cierre" aria-selected="false">Cierre</button>
                                             </li>
                                         </ul>
                                         <div class="tab-content">
@@ -402,8 +402,6 @@
                                                         </button>
                                                     </div>
                                                     <br>
-
-
                                                     <form action="">
                                                         <div class="accordion" id="accordionExample">
                                                             <div class="accordion-item">
@@ -419,7 +417,7 @@
                                                                                 <!--Incia el card --->
                                                                                 <div class="card-body">
                                                                                     <div class="col-12 col-sm-6">
-                                                                                        <h4 class="tx-gray-800 mg-b-5 text-primary"><u>DATOS DEL VEHÍCULO</u></h4>
+                                                                                        <h4 class="tx-gray-800 mg-b-5 text-primary">DATOS DEL VEHÍCULO</h4>
                                                                                     </div>
                                                                                     <!-- ======= FORMULARIO DATOS ======= -->
 
