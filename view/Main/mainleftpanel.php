@@ -44,7 +44,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="nav-link" href="">
+									<a class="nav-link" href="../Gestionresidentes/residentes.php">
 										Gestion de Residentes
 									</a>
 								</li>
