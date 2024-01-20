@@ -31,16 +31,18 @@
 								<li>
 									<a class="nav-link" href="../Gestionpropietario/propietario.php">
 										Registro de Propietario
-										<!-- Enviar Dpto Usuario - Contraseña -->
 									</a>
 								</li>
 								<li>
 									<a class="nav-link" href="../Gestionarrendatario/departamento.php">
-										Registro de Inquilino
-										<!-- Registrar Propietario - Familiar - Inquilino -->
+										Consulta de Arrendatario
 									</a>
 								</li>
-								
+								<li>
+									<a class="nav-link" href="../Gestionarrendatario/registro.php">
+										Registro de Arrendatario
+									</a>
+								</li>
 
 							</ul>
 						</li>
