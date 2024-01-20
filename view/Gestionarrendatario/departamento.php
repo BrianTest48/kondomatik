@@ -451,7 +451,7 @@
                                                         <section class="card">
                                                             <div class="card-body">
                                                                 <div class="table-wrapper">
-                                                                    <table id="" class="display min-w850" style="width: 100%">
+                                                                    <table id="" class="table table-bordered table-striped mb-0" style="width: 100%">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th class="wd-15p">N°</th>
@@ -687,7 +687,7 @@
                                                             <section class="card">
                                                                 <div class="card-body">
                                                                     <div class="table-wrapper">
-                                                                        <table id="" class="display min-w850" style="width: 100%">
+                                                                        <table id="" class="table table-bordered table-striped mb-0" style="width: 100%">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th class="wd-15p">N°</th>
@@ -710,7 +710,7 @@
                                                             <section class="card">
                                                                 <div class="card-body">
                                                                     <div class="table-wrapper">
-                                                                        <table id="" class="display min-w850" style="width: 100%">
+                                                                        <table id="" class="table table-bordered table-striped mb-0" style="width: 100%">
                                                                             <thead>
                                                                                 <tr>
                                                                                     <th class="wd-15p">N°</th>
@@ -734,7 +734,7 @@
                                                         <section class="card">
                                                             <div class="card-body">
                                                                 <div class="table-wrapper">
-                                                                    <table id="" class="display min-w850" style="width: 100%">
+                                                                    <table id="" class="table table-bordered table-striped mb-0" style="width: 100%">
                                                                         <thead>
                                                                             <tr>
                                                                                 <th class="wd-15p">N°</th>

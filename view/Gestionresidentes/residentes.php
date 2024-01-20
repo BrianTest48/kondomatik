@@ -93,14 +93,13 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-4">
-                                                                    <label for="" class="col-sm-2 col-form-label">Tipo de Prop</label>
-                                                                    <div class="col-sm-2">
-                                                                        <select class="form-control select2" name="" id="" data-placeholder="tipo" style="width: 100%" required>
-                                                                            <option label="Seleccione"></option>
-                                                                            <option value="#">_____________</option>
-                                                                        </select>
-                                                                    </div>
-                                                                
+                                                                <div class="col-sm-12">
+                                                                    <select class="form-control select2" name="" id="" data-placeholder="Selecciona tipo de prop" style="width: 100%" required>
+                                                                        <option label="Selecciona tipo de prop"></option>
+                                                                        <option value="#">_____________</option>
+                                                                    </select>
+                                                                </div>
+
                                                             </div>
                                                         </div>
                                                         <br>
@@ -111,18 +110,16 @@
                                                                     <section class="card">
                                                                         <div class="card-body">
                                                                             <div class="table-wrapper">
-                                                                                <table id="" class="display min-w850 text-center" style="width: 100%">
+                                                                                <table id="" class="table table-bordered table-striped mb-0" style="width: 100%">
                                                                                     <thead>
                                                                                         <tr>
-                                                                                            <th class="wd-15p">Nro de</th>
-                                                                                            <th class="wd-15p">Programacion</th>
-                                                                                            <th class="wd-15p">Tipo</th>
-                                                                                            <th class="wd-15p">Solicitante</th>
-                                                                                            <th class="wd-5p">Estado</th>
+                                                                                            <th class="wd-15p">Nro Dpto</th>
+                                                                                            <th class="wd-15p">Nombre</th>
+                                                                                            <th class="wd-15p">DNI</th>
+                                                                                            <th class="wd-15p">Celular</th>
                                                                                         </tr>
                                                                                     </thead>
                                                                                     <tbody>
-
                                                                                     </tbody>
                                                                                 </table>
                                                                             </div>
@@ -130,19 +127,14 @@
                                                                     </section>
                                                                 </div>
                                                             </div>
-
                                                             <div class="col-xl-6">
                                                                 <div class="form-group row">
                                                                     <div class="text-center">
-                                                                        <img src="../../assets/subir.png" class="rounded" alt="...">
+                                                                        <img src="../../assets/equis.png" class="rounded" alt="...">
                                                                     </div>
                                                                 </div>
-                                                                <br>
-                                                                <div class="form-group row">
-                                                                    <label for="" class="col-sm-4 col-form-label">Observaciones: </label>
-                                                                    <div class="col-sm-12">
-                                                                        <textarea type="text" class="form-control" id="" placeholder=""></textarea>
-                                                                    </div>
+                                                                <div class="text-center">
+                                                                    <p>Carlos Zapata (Prop)</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -151,9 +143,7 @@
                                                 <br>
                                                 <div class=" text-center">
                                                     <button type="submit" name="submit" class="btn btn-raised btn-primary">
-                                                        CANCELAR</button>
-                                                    <button type="submit" name="submit" class="btn btn-raised btn-primary">
-                                                        ENVIAR</button>
+                                                        CERRAR</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -162,28 +152,6 @@
                                                 <!-- ======= FORMULARIO DATOS ======= -->
                                                 <div class="br-pagebody">
                                                     <div class="br-section-wrapper">
-                                                        <br>
-                                                        <div class="form-group row m-t-12">
-                                                            <label for="" class="col-sm-6 col-form-label"></label>
-                                                            <label for="" class="col-sm-3 col-form-label">Mes</label>
-                                                            <div class="col-sm-3">
-                                                                <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" required>
-                                                                    <option label="Seleccione"></option>
-                                                                    <option value="#">_____________</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="form-group row">
-                                                            <div class="text-center">
-                                                                <img src="../../assets/cuadro.jpg" class="rounded" alt="...">
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                                            <button class="btn btn-primary me-md-2" type="button">Ver Programación de la Semana</button>
-                                                            <button class="btn btn-primary" type="button">Ver Programación Mensual</button>
-                                                        </div>
                                                         <br>
                                                         <div class="row">
                                                             <div class="col-md-12 mx-auto">
@@ -199,12 +167,12 @@
                                                         </div>
                                                         <br>
                                                         <div class="form-group row m-t-12">
-                                                            <label for="" class="col-sm-2 col-form-label">Estado:</label>
+                                                            <label for="" class="col-sm-2 col-form-label">Buscar por:</label>
                                                             <div class="col-sm-2">
                                                                 <div class="form-check">
                                                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                                                     <label class="form-check-label" for="flexRadioDefault1">
-                                                                        Todos
+                                                                        Nro Dpto
                                                                     </label>
                                                                 </div>
                                                             </div>
@@ -212,7 +180,7 @@
                                                                 <div class="form-check">
                                                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                                                     <label class="form-check-label" for="flexRadioDefault1">
-                                                                        En espera
+                                                                        Nombre
                                                                     </label>
                                                                 </div>
                                                             </div>
@@ -220,35 +188,27 @@
                                                                 <div class="form-check">
                                                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                                                     <label class="form-check-label" for="flexRadioDefault1">
-                                                                        Observados
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-2">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                                                    <label class="form-check-label" for="flexRadioDefault1">
-                                                                        Aprobados
+                                                                        DNI
                                                                     </label>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <br>
-
                                                         <div class="row">
-                                                            <div class="col-xl-9">
+                                                            <div class="col-xl-6">
                                                                 <div class="col-lg-12 col-form-label">
                                                                     <section class="card">
                                                                         <div class="card-body">
                                                                             <div class="table-wrapper">
-                                                                                <table id="" class="display min-w850 text-center" style="width: 100%">
+                                                                                <table id="" class="table table-bordered table-striped mb-0" style="width: 100%">
                                                                                     <thead>
                                                                                         <tr>
                                                                                             <th class="wd-15p">Nro de</th>
-                                                                                            <th class="wd-15p">Programacion</th>
-                                                                                            <th class="wd-15p">Tipo</th>
-                                                                                            <th class="wd-15p">Solicitante</th>
-                                                                                            <th class="wd-5p">Estado</th>
+                                                                                            <th class="wd-15p">Nombre</th>
+                                                                                            <th class="wd-15p">DNI</th>
+                                                                                            <th class="wd-15p">Celular</th>
+                                                                                            <th class="wd-15p">Ver Familia</th>
+                                                                                            <th class="wd-15p">Ver visitante</th>
                                                                                         </tr>
                                                                                     </thead>
                                                                                 </table>
@@ -257,29 +217,14 @@
                                                                     </section>
                                                                 </div>
                                                             </div>
-
-                                                            <div class="col-xl-3">
-                                                                <div class="border border-secondary  p-2 rounded-2 col-12">
-                                                                    <h3>Control</h3>
-                                                                    <div class="form-group row">
-                                                                        <label for="" class="col-sm-12 col-form-label">Inicio </label>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="time" class="form-control" id="" placeholder="En Espera">
-                                                                        </div>
+                                                            <div class="col-xl-6">
+                                                                <div class="form-group row">
+                                                                    <div class="text-center">
+                                                                        <img src="../../assets/equis.png" class="rounded" alt="...">
                                                                     </div>
-                                                                    <div class="form-group row">
-                                                                        <label for="" class="col-sm-12 col-form-label">Fin </label>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="time" class="form-control" id="" placeholder="En Espera">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-group row">
-                                                                        <label for="" class="col-sm-12 col-form-label">Exceso </label>
-                                                                        <div class="col-sm-12">
-                                                                            <input type="time" class="form-control" id="" placeholder="En Espera">
-                                                                        </div>
-                                                                    </div>
-
+                                                                </div>
+                                                                <div class="text-center">
+                                                                    <p>Carlos Zapata (Prop)</p>
                                                                 </div>
                                                             </div>
                                                         </div>
