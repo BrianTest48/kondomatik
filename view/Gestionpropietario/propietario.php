@@ -31,209 +31,607 @@
                             <div class="card-body">
                                 <div class="row justify-content-between pd-x-20 pd-sm-x-30 pd-t-20 pd-sm-t-30">
                                     <div class="col-md-12">
-                                        <ul class="nav justify-content-center">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="../Gestionpropietario/propietario.php">Propietario</a>
+                                        <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist" style="border-bottom : 0px">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active btn btn-outline-secondary btn-block mg-b-10 " id="orcinea-tab" data-bs-toggle="pill" data-bs-target="#ppropietario" type="button" role="tab" aria-controls="ppropietario" aria-selected="true">Propietario</button>
                                             </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="../Gestionpropietario/familiares.php">Familiares</a>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link btn btn-outline-secondary btn-block mg-b-10 " id="host-tab" data-bs-toggle="pill" data-bs-target="#pfamiliares" type="button" role="tab" aria-controls="pfamiliares" aria-selected="false">Familiares</button>
                                             </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="../Gestionpropietario/posesiones.php">Posesiones</a>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link btn btn-outline-secondary btn-block mg-b-10 " id="refelx-tab" data-bs-toggle="pill" data-bs-target="#pposesiones" type="button" role="tab" aria-controls="pposesiones" aria-selected="false">Posesiones</button>
                                             </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="../Gestionpropietario/cierre.php">Cierre</a>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link btn btn-outline-secondary btn-block mg-b-10 " id="host-tab" data-bs-toggle="pill" data-bs-target="#pcierre" type="button" role="tab" aria-controls="pcierre" aria-selected="false">Cierre</button>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-12 col-sm-6">
-                                        <h4 class="tx-gray-800 mg-b-5">DATOS DEL PROPIETARIO</h4>
-                                    </div>
+                                    <div class="tab-content">
+                                        <!-- AQUI VA EL CONTENIDO -->
+                                        <div id="ppropietario" class="tab-pane fadein show active">
+                                            <div class="border border-secondary  p-2 rounded-2 col-12">
 
-                                    <!--Incia el card --->
+                                                <!--Incia el card --->
+                                                <div class="col-12 col-sm-6">
+                                                    <h4 class="tx-gray-800 mg-b-5">DATOS DEL PROPIETARIO</h4>
+                                                </div>
+                                                <br>
 
-                                    <div class="border border-secondary  p-2 rounded-2 col-12">
-                                        <!-- ======= FORMULARIO DATOS ======= -->
+                                                <!-- ======= FORMULARIO DATOS ======= -->
 
-                                        <div class="form-group row m-t-15">
-                                            <label for="" class="col-sm-2 col-form-label">Fecha de Registro</label>
-                                            <div class="col-sm-2">
-                                                <input type="date" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">ID Propietario</label>
-                                            <div class="col-sm-2">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
+                                                <div class="form-group row m-t-15">
+                                                    <label for="" class="col-sm-2 col-form-label">Fecha de Registro</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="date" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">ID Propietario</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
 
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Tipo de Documento</label>
-                                            <div class="col-sm-2">
-                                                <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" required>
-                                                    <option label="Seleccione"></option>
-                                                    <option value="#">DNI</option>
-                                                    <option value="#">Carnet de Extranjería</option>
-                                                </select>
-                                            </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Tipo de Documento</label>
+                                                    <div class="col-sm-2">
+                                                        <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" required>
+                                                            <option label="Seleccione"></option>
+                                                            <option value="#">DNI</option>
+                                                            <option value="#">Carnet de Extranjería</option>
+                                                        </select>
+                                                    </div>
 
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">N° de Documento</label>
-                                            <div class="col-sm-2">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">N° de Documento</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
 
-                                        </div>
-                                        <form action="">
-                                            <div class="accordion" id="accordionExample">
-                                                <div class="accordion-item">
-                                                    <h2 class="accordion-header" id="headingOne">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                            ¿Elegiste RUC? ¡Registra los datos de la empresa!
-                                                        </button>
-                                                    </h2>
-                                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body">
-                                                            <div id="orcinea" class="">
-                                                                <div class="card pd-t-20">
-                                                                    <!--Incia el card --->
-                                                                    <div class="card-body">
-                                                                        <div class="border border-secondary  p-2 rounded-2">
-                                                                            <!-- ======= FORMULARIO DATOS DEL PACIENTE ======= -->
-                                                                            <div id="pacientes" autocomplete="off">
-                                                                                <input type="hidden" id="id" name="id">
-                                                                                <h6 class="bg-primary p-2  col-sm-12 text-white rounded ">DATOS DE LA EMPRESA
-                                                                                </h6>
+                                                </div>
+                                                <form action="">
+                                                    <div class="accordion" id="accordionExample">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingOne">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                    ¿Elegiste RUC? ¡Registra los datos de la empresa!
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <div id="orcinea" class="">
+                                                                        <div class="card pd-t-20">
+                                                                            <!--Incia el card --->
+                                                                            <div class="card-body">
+                                                                                <div class="border border-secondary  p-2 rounded-2">
+                                                                                    <!-- ======= FORMULARIO DATOS DEL PACIENTE ======= -->
+                                                                                    <div id="pacientes" autocomplete="off">
+                                                                                        <input type="hidden" id="id" name="id">
+                                                                                        <h6 class="bg-primary p-2  col-sm-12 text-white rounded ">DATOS DE LA EMPRESA
+                                                                                        </h6>
 
-                                                                                <div class="form-group row">
-                                                                                    <label for="" class="col-sm-2 col-form-label">Razón Social</label>
-                                                                                    <div class="col-sm-10">
-                                                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                                                        <div class="form-group row">
+                                                                                            <label for="" class="col-sm-2 col-form-label">Razón Social</label>
+                                                                                            <div class="col-sm-10">
+                                                                                                <input type="text" class="form-control" id="" placeholder="">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group row">
+                                                                                            <label for="" class="col-sm-2 col-form-label">Cargo del Propietario</label>
+                                                                                            <div class="col-sm-10">
+                                                                                                <input type="text" class="form-control" id="" placeholder="">
+                                                                                            </div>
+                                                                                        </div>
+
                                                                                     </div>
-                                                                                </div>
-                                                                                <div class="form-group row">
-                                                                                    <label for="" class="col-sm-2 col-form-label">Cargo del Propietario</label>
-                                                                                    <div class="col-sm-10">
-                                                                                        <input type="text" class="form-control" id="" placeholder="">
-                                                                                    </div>
-                                                                                </div>
+                                                                                    <br>
 
+                                                                                </div>
                                                                             </div>
-                                                                            <br>
-
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </form>
+                                                </form>
 
-                                        <br>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Nombres: </label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Apellido Paterno: </label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Apellido Materno: </label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Email: </label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row m-t-15">
-                                            <label for="" class="col-sm-2 col-form-label">Tipo Propietario</label>
-                                            <div class="col-sm-4">
-                                                <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" onclick="validarInputs()" required>
-                                                    <option label="Seleccione"></option>
-                                                    <option value="">Principal</option>
-                                                    <option value="">___________</option>
-                                                </select>
-                                            </div>
-                                            <label for="" class="col-sm-3 col-form-label">Nro de Familiares</label>
-                                            <div class="col-sm-3">
-                                                <input type="text" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row m-t-15">
-                                            <label for="" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
-                                            <div class="col-sm-2">
-                                                <input type="date" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Teléfono Fijo:</label>
-                                            <div class="col-sm-2">
-                                                <input type="number" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="" class="col-sm-2 col-form-label">Celualr:</label>
-                                            <div class="col-sm-2">
-                                                <input type="number" class="form-control" id="" placeholder="">
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class=" text-center">
-                                            <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
-                                                Agregar Otro Propietario
-                                            </button>
-                                        </div>
-                                        <br>
-                                        <h6 class="bg-primary p-2  col-sm-12 text-white rounded"> LISTA DE PROPIETARIOS
-                                        </h6>
-                                        <div class="col-lg-12 col-form-label">
-                                            <section class="card">
-                                                <div class="card-body">
-                                                    <div class="table-wrapper">
-                                                        <table id="" class="display min-w850" style="width: 100%">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th class="wd-15p">N°</th>
-                                                                    <th class="wd-15p">Tipo Propietario</th>
-                                                                    <th class="wd-15p">DNI</th>
-                                                                    <th class="wd-15p">Nombres y Apellidos</th>
-                                                                    <th class="wd-5p">Editar</th>
-                                                                    <th class="wd-5p">Eliminar</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-
-                                                            </tbody>
-                                                        </table>
+                                                <br>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Nombres: </label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="" placeholder="">
                                                     </div>
                                                 </div>
-                                            </section>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Apellido Paterno: </label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Apellido Materno: </label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Email: </label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row m-t-15">
+                                                    <label for="" class="col-sm-2 col-form-label">Tipo Propietario</label>
+                                                    <div class="col-sm-4">
+                                                        <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" onclick="validarInputs()" required>
+                                                            <option label="Seleccione"></option>
+                                                            <option value="">Principal</option>
+                                                            <option value="">___________</option>
+                                                        </select>
+                                                    </div>
+                                                    <label for="" class="col-sm-3 col-form-label">Nro de Familiares</label>
+                                                    <div class="col-sm-3">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row m-t-15">
+                                                    <label for="" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="date" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Teléfono Fijo:</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="number" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Celualr:</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="number" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class=" text-center">
+                                                    <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
+                                                        Agregar Otro Propietario
+                                                    </button>
+                                                </div>
+                                                <br>
+                                                <h6 class="bg-primary p-2  col-sm-12 text-white rounded"> LISTA DE PROPIETARIOS
+                                                </h6>
+                                                <div class="col-lg-12 col-form-label">
+                                                    <section class="card">
+                                                        <div class="card-body">
+                                                            <div class="table-wrapper">
+                                                                <table id="" class="display min-w850" style="width: 100%">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="wd-15p">N°</th>
+                                                                            <th class="wd-15p">Tipo Propietario</th>
+                                                                            <th class="wd-15p">DNI</th>
+                                                                            <th class="wd-15p">Nombres y Apellidos</th>
+                                                                            <th class="wd-5p">Editar</th>
+                                                                            <th class="wd-5p">Eliminar</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                                <br><br><br>
+                                                <div class=" text-center">
+                                                    <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
+                                                        SIGUIENTE
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <br><br><br>
-                                        <div class=" text-center">
-                                            <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
-                                                SIGUIENTE
-                                            </button>
+                                        <div id="pfamiliares" class="tab-pane fadein show active">
+
+                                            <!--Incia el card --->
+
+                                            <div class="border border-secondary  p-2 rounded-2 col-12">
+                                                <!-- ======= FORMULARIO DATOS ======= -->
+
+                                                <div class="col-12 col-sm-6">
+                                                    <h4 class="tx-gray-800 mg-b-5">DATOS DEL FAMILIAR</h4>
+                                                </div>
+                                                <br>
+
+                                                <div class="form-group row m-t-15">
+                                                    <label for="" class="col-sm-2 col-form-label">Fecha de Registro</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="date" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">ID Propietario</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Tipo de Documento</label>
+                                                    <div class="col-sm-2">
+                                                        <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" required>
+                                                            <option label="Seleccione"></option>
+                                                            <option value="#">DNI</option>
+                                                            <option value="#">Carnet de Extranjería</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">N° de Documento</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Nombres: </label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Apellido Paterno: </label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Apellido Materno: </label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Email: </label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row m-t-15">
+                                                    <label for="" class="col-sm-2 col-form-label">Tipo Propietario</label>
+                                                    <div class="col-sm-4">
+                                                        <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" onclick="validarInputs()" required>
+                                                            <option label="Seleccione"></option>
+                                                            <option value="">Principal</option>
+                                                            <option value="">___________</option>
+                                                        </select>
+                                                    </div>
+                                                    <label for="" class="col-sm-3 col-form-label">Nro de Familiares</label>
+                                                    <div class="col-sm-3">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row m-t-15">
+                                                    <label for="" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="date" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Teléfono Fijo:</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="number" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="" class="col-sm-2 col-form-label">Celualr:</label>
+                                                    <div class="col-sm-2">
+                                                        <input type="number" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class=" text-center">
+                                                    <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
+                                                        Agregar Otro Familiar
+                                                    </button>
+                                                </div>
+                                                <br>
+                                                <h6 class="bg-primary p-2  col-sm-12 text-white rounded"> LISTA DE FAMILIAR
+                                                </h6>
+                                                <div class="col-lg-12 col-form-label ">
+                                                    <section class="card">
+                                                        <div class="card-body">
+                                                            <div class="table-wrapper">
+                                                                <table id="" class="display min-w850" style="width: 100%">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="wd-15p">N°</th>
+                                                                            <th class="wd-15p">Parentesco</th>
+                                                                            <th class="wd-15p">DNI</th>
+                                                                            <th class="wd-15p">Nombres y Apellidos</th>
+                                                                            <th class="wd-5p">Editar</th>
+                                                                            <th class="wd-5p">Eliminar</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                                <br><br><br>
+                                                <div class=" text-center">
+                                                    <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
+                                                        ATRAS
+                                                    </button>
+                                                    <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
+                                                        SIGUIENTE
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div id="pposesiones" class="tab-pane fadein show active">
+
+                                            <!--Incia el card --->
+
+                                            <div class="border border-secondary  p-2 rounded-2 col-12">
+                                                <!-- ======= FORMULARIO DATOS ======= -->
+
+                                                <div class="col-12 col-sm-6">
+                                                    <h4 class="tx-gray-800 mg-b-5">DATOS DE COCHERA Y DEPÓSITO</h4>
+                                                </div>
+                                                <br>
+
+                                                <div class="form-group row m-t-12">
+                                                    <label for="" class="col-sm-2 col-form-label">N° de Cochera</label>
+                                                    <div class="col-sm-4">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                    <label for="" class="col-sm-3 col-form-label">Nro de Depósito</label>
+                                                    <div class="col-sm-3">
+                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                    </div>
+                                                </div>
+
+                                                <br>
+                                                <div class=" text-center">
+                                                    <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
+                                                        Agrega otra Cochera/Depósito
+                                                    </button>
+                                                </div>
+                                                <br>
+
+
+                                                <form action="">
+                                                    <div class="accordion" id="accordionExample">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingOne">
+                                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                    ¿Tiene algún vehículo? ¡Registralo!
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    <div id="orcinea" class="">
+                                                                        <div class="card pd-t-20">
+                                                                            <!--Incia el card --->
+                                                                            <div class="card-body">
+                                                                                <div class="col-12 col-sm-6">
+                                                                                    <h4 class="tx-gray-800 mg-b-5">DATOS DEL VEHÍCULO</h4>
+                                                                                </div>
+                                                                                <!-- ======= FORMULARIO DATOS ======= -->
+
+                                                                                <div class="form-group row">
+                                                                                    <label for="" class="col-sm-2 col-form-label">Tipo de Auto:</label>
+                                                                                    <div class="col-sm-2">
+                                                                                        <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" required>
+                                                                                            <option label="Seleccione"></option>
+                                                                                            <option value="#">Tipo 1</option>
+                                                                                            <option value="#">Tipo 2</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <label for="" class="col-sm-2 col-form-label">Marca de Vehículo:</label>
+                                                                                    <div class="col-sm-2">
+                                                                                        <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" required>
+                                                                                            <option label="Seleccione"></option>
+                                                                                            <option value="#">Marca 1</option>
+                                                                                            <option value="#">Marca 2</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <label for="" class="col-sm-2 col-form-label">N° de Placa:</label>
+                                                                                    <div class="col-sm-2">
+                                                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group row m-t-15">
+                                                                                    <label for="" class="col-sm-2 col-form-label">Color de Vehículo</label>
+                                                                                    <div class="col-sm-2">
+                                                                                        <input type="text" class="form-control" id="" placeholder="">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class=" text-center">
+                                                                                <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
+                                                                                    Agregar otro vehículo
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+                                                <br>
+
+                                                <br>
+                                                <h6 class="bg-primary p-2  col-sm-12 text-white rounded"> LISTA DE POSESIONES
+                                                </h6>
+
+                                                <div class="form-group row">
+
+                                                    <div class="col-lg-6 col-form-label ">
+                                                        <h4>Lista de Cocheras</h4>
+                                                        <section class="card">
+                                                            <div class="card-body">
+                                                                <div class="table-wrapper">
+                                                                    <table id="" class="display min-w850" style="width: 100%">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th class="wd-15p">N°</th>
+                                                                                <th class="wd-15p">Nro de Cochera</th>
+                                                                                <th class="wd-5p">Editar</th>
+                                                                                <th class="wd-5p">Eliminar</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+
+                                                    <div class="col-lg-6 col-form-label ">
+                                                        <h4>Lista de Depósito (s)</h4>
+                                                        <section class="card">
+                                                            <div class="card-body">
+                                                                <div class="table-wrapper">
+                                                                    <table id="" class="display min-w850" style="width: 100%">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th class="wd-15p">N°</th>
+                                                                                <th class="wd-15p">N° de Depósito</th>
+                                                                                <th class="wd-5p">Editar</th>
+                                                                                <th class="wd-5p">Eliminar</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <br><br>
+                                                <div class="col-lg-12 col-form-label ">
+                                                    <h4>Lista de Vehículos</h4>
+                                                    <section class="card">
+                                                        <div class="card-body">
+                                                            <div class="table-wrapper">
+                                                                <table id="" class="display min-w850" style="width: 100%">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="wd-15p">N°</th>
+                                                                            <th class="wd-15p">Tipo</th>
+                                                                            <th class="wd-15p">Marca</th>
+                                                                            <th class="wd-15p">Nro de Placa</th>
+                                                                            <th class="wd-15p">Color</th>
+                                                                            <th class="wd-5p">Editar</th>
+                                                                            <th class="wd-5p">Eliminar</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+
+                                                <br><br><br>
+                                                <div class=" text-center">
+                                                    <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
+                                                        ATRAS
+                                                    </button>
+                                                    <button type="submit" name="submit" class="btn btn-raised btn-primary"><i class='bx bxs-save'></i>
+                                                        SIGUIENTE
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div id="pcierre" class="tab-pane fadein show active">
+
+                                            <!--Incia el card --->
+
+                                            <div class="border border-secondary  p-2 rounded-2 col-12">
+                                                <!-- ======= FORMULARIO DATOS ======= -->
+
+                                                <div class="col-12 col-sm-6">
+                                                    <h4 class="tx-gray-800 mg-b-5">DOCUMENTACION DEL PROPIETARIO</h4>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                                        <label class="form-check-label" for="flexCheckIndeterminate">
+                                                            Título de Propiedad
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input type="file" class="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <br>
+
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                                        <label class="form-check-label" for="flexCheckIndeterminate">
+                                                            Escritura Pública
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <input type="file" class="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <br>
+
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                                        <label class="form-check-label" for="flexCheckIndeterminate">
+                                                            Minuta de Compra y Venta:
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <br><br><br>
+                                                <div class=" text-center">
+                                                    <button type="submit" name="submit" class="btn btn-raised btn-primary">
+                                                        FINALIZAR REGISTRO
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
                                         </div>
 
                                     </div>
 
-                                </div><!-- br-pagebody -->
-                            </div>
+                                </div>
+                            </div><!-- br-pagebody -->
                         </div>
+                    </div>
                 </section>
             </div>
         </div>

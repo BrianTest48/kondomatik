@@ -43,10 +43,14 @@
 										Registro de Arrendatario
 									</a>
 								</li>
-
+								<li>
+									<a class="nav-link" href="">
+										Gestion de Residentes
+									</a>
+								</li>
 							</ul>
 						</li>
-						<li class="nav-parent nav-expanded nav-active">
+						<li class="nav-parent">
 							<a class="nav-link" href="#">
 								<i class="bx bx-layout" aria-hidden="true"></i>
 								<span>Gestion de Ingresos</span>
