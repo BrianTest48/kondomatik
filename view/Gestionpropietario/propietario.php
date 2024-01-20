@@ -42,7 +42,7 @@
                                                 <button class="nav-link btn btn-outline-secondary btn-block mg-b-10 " id="refelx-tab" data-bs-toggle="pill" data-bs-target="#posesiones" type="button" role="tab" aria-controls="posesiones" aria-selected="false">Posesiones</button>
                                             </li>
                                             <li class="nav-item" role="presentation">
-                                                <button class="nav-link btn btn-outline-secondary btn-block mg-b-10 " id="refelx-tab" data-bs-toggle="pill" data-bs-target="#cierre" type="button" role="tab" aria-controls="cierre" aria-selected="false">Cierre</button>
+                                                <button class="nav-link btn btn-outline-secondary btn-block mg-b-10 " id="refelx-tab" git commitdata-bs-toggle="pill" data-bs-target="#cierre" type="button" role="tab" aria-controls="cierre" aria-selected="false">Cierre</button>
                                             </li>
                                         </ul>
                                         <div class="tab-content">
