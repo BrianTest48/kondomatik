@@ -476,7 +476,7 @@
                                                     <div class="form-group row">
 
                                                         <div class="col-lg-6 col-form-label ">
-                                                            <h4>Lista de Cocheras</h4>
+                                                            <h4 class="tx-gray-800 mg-b-5 text-primary text-center"><u>Lista de Cocheras</u></h4>
                                                             <section class="card">
                                                                 <div class="card-body">
                                                                     <div class="table-wrapper">
@@ -499,7 +499,7 @@
                                                         </div>
 
                                                         <div class="col-lg-6 col-form-label ">
-                                                            <h4>Lista de Depósito (s)</h4>
+                                                            <h4 class="tx-gray-800 mg-b-5 text-primary text-center"><u>Lista de Depósito (s)</u></h4>
                                                             <section class="card">
                                                                 <div class="card-body">
                                                                     <div class="table-wrapper">
@@ -523,7 +523,7 @@
                                                     </div>
                                                     <br><br>
                                                     <div class="col-lg-12 col-form-label ">
-                                                        <h4>Lista de Vehículos</h4>
+                                                        <h4 class="tx-gray-800 mg-b-5 text-primary text-center"><u>Lista de Vehículos</u></h4>
                                                         <section class="card">
                                                             <div class="card-body">
                                                                 <div class="table-wrapper">
