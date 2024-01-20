@@ -55,7 +55,7 @@
                                                     <!-- ======= FORMULARIO DATOS ======= -->
 
                                                     <div class="col-12 col-sm-6">
-                                                        <h4 class="tx-gray-800 mg-b-5">DATOS DEL PROPIETARIO</h4>
+                                                        <h4 class="tx-gray-800 mg-b-5 text-primary"><u>DATOS DEL PROPIETARIO</u></h4>
                                                     </div>
 
                                                     <div class="form-group row m-t-15">
@@ -240,7 +240,7 @@
                                                     <!-- ======= FORMULARIO DATOS ======= -->
 
                                                     <div class="col-12 col-sm-6">
-                                                        <h4 class="tx-gray-800 mg-b-5">DATOS DEL FAMILIAR</h4>
+                                                        <h4 class="tx-gray-800 mg-b-5 text-primary"><u>DATOS DEL FAMILIAR</u></h4>
                                                     </div>
 
                                                     <div class="form-group row m-t-15">
@@ -381,7 +381,7 @@
                                                     <!-- ======= FORMULARIO DATOS ======= -->
 
                                                     <div class="col-12 col-sm-6">
-                                                        <h4 class="tx-gray-800 mg-b-5">DATOS DE COCHERA Y DEPÓSITO</h4>
+                                                        <h4 class="tx-gray-800 mg-b-5 text-primary"><u>DATOS DE COCHERA Y DEPÓSITO</u></h4>
                                                     </div>
 
                                                     <div class="form-group row m-t-12">
@@ -419,7 +419,7 @@
                                                                                 <!--Incia el card --->
                                                                                 <div class="card-body">
                                                                                     <div class="col-12 col-sm-6">
-                                                                                        <h4 class="tx-gray-800 mg-b-5">DATOS DEL VEHÍCULO</h4>
+                                                                                        <h4 class="tx-gray-800 mg-b-5 text-primary"><u>DATOS DEL VEHÍCULO</u></h4>
                                                                                     </div>
                                                                                     <!-- ======= FORMULARIO DATOS ======= -->
 
@@ -570,7 +570,7 @@
                                                     <!-- ======= FORMULARIO DATOS ======= -->
 
                                                     <div class="col-12 col-sm-6">
-                                                        <h4 class="tx-gray-800 mg-b-5">DOCUMENTACION DEL PROPIETARIO</h4>
+                                                        <h4 class="tx-gray-800 mg-b-5 text-primary"><u>DOCUMENTACION DEL PROPIETARIO</u></h4>
                                                     </div>
 
                                                     <div class="row">
