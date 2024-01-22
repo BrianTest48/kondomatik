@@ -24,7 +24,7 @@
                 </aside>
                 <section role="main" class="content-body">
                     <header class="page-header">
-                        <h2>Solicitud</h2>
+                        <h2>Gestión de Solicitudes</h2>
                     </header>
                     <div class="row">
                         <div class="card">
@@ -66,7 +66,32 @@
                                                                             <input type="date" class="form-control" id="" placeholder="">
                                                                         </div>
                                                                     </div>
+                                                                    <br>
                                                                     <div class="form-group row">
+                                                                        <h4 class="text-primary"><u>Busqueda del Solicitante</u></h4>
+                                                                        <div class="col-lg-4">
+                                                                            <div class="form-group">
+                                                                                <label class="col-sm-12 col-form-label" for="tipo_doc">Tipo de Doc: <span class="tx-danger">*</span></label>
+                                                                                <select class="form-control select2" name="" id="" data-placeholder="Seleccione" style="width: 100%" onchange="validarInputs()" required>
+                                                                                    <option label="Seleccione"></option>
+                                                                                    <option value="D.N.I">D.N.I</option>
+                                                                                    <option value="C.E">Nro Dpto</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div><!-- col-4 -->
+                                                                        <div class="col-lg-4">
+                                                                            <div class="form-group">
+                                                                                <label class="col-sm-12 col-form-label">Nro de Documento: <span class="tx-danger">*</span></label>
+                                                                                <input class="form-control" type="text" id="" name="" placeholder="Ingrese Numero de Documento" maxlength="11" required>
+                                                                            </div>
+                                                                        </div><!-- col-4 -->
+                                                                        <div class="col-lg-4  d-flex align-items-center justify-content-center">
+                                                                            <button type="button" id="btnbuscar" name="btnbuscar" class="btn btn-info col-sm-12">Buscar</button>
+                                                                        </div><!-- col-4 -->
+                                                                    </div>
+
+
+                                                                    <!-- <div class="form-group row">
                                                                         <label for="" class="col-sm-4 col-form-label">ID Propietario: </label>
                                                                         <div class="col-sm-8">
                                                                             <input type="text" class="form-control" id="" placeholder="">
@@ -86,7 +111,7 @@
                                                                         <div class="col-sm-8">
                                                                             <input type="number" class="form-control" id="" placeholder="">
                                                                         </div>
-                                                                    </div>
+                                                                    </div> -->
                                                                     <br>
                                                                     <h4 class="tx-gray-800 mg-b-5 text-primary"><u>Datos de la Solicitud</u></h4>
                                                                     <br>

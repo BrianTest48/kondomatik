@@ -606,6 +606,9 @@
                                                                 Minuta de Compra y Venta:
                                                             </label>
                                                         </div>
+                                                        <div class="col-sm-8">
+                                                            <input type="file" class="">
+                                                        </div>
                                                     </div>
 
                                                     <br><br><br>
